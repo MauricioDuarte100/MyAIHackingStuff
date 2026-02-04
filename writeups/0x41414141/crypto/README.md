@@ -1,0 +1,2 @@
+# Crypto
+- [factorize](factorize)

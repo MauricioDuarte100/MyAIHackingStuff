@@ -1,68 +1,39 @@
-# My AI Hacking Stuff (Gemini CLI Elite Setup)
+# My AI Hacking Stuff
 
-Este repositorio contiene mi configuracion personal para Google Gemini CLI, optimizada para Bug Bounty, Pentesting de Active Directory y Operaciones de Red Team.
+This repository contains a comprehensive collection of AI agents, skills, rules, and knowledge bases designed for advanced security assessments, penetration testing, and bug bounty hunting. It serves as the central "brain" for an AI-powered security assistant.
 
-Incluye:
-- 8 Servidores MCP configurados.
-- 11 Skills Especializadas (incluyendo Pentesting de AD y Linux).
-- 3 Archivos de Contexto (Prompts) para definir el comportamiento de la IA.
+## Directory Structure
 
-## Guia de Instalacion
+### 1. Agents
+Specialized agent definitions that complement the core skills. These agents act as experts in specific domains:
+- **api-security-audit**: Specialist in REST API security, authentication, and authorization flaws.
+- **backend-architect**: Expert in system architecture, inferring backend logic and potential design flaws.
+- **code-reviewer**: Automated code analysis for security vulnerabilities and secrets.
+- **penetration-tester**: Generalist offensive security expert for exploitation and post-exploitation.
+- **security-auditor**: Focuses on OWASP compliance, secure coding, and configuration reviews.
 
-Sigue estos pasos para configurar tu entorno Gemini CLI con estos archivos.
+### 2. Skills
+Executable capabilities and workflows that the AI can trigger to perform specific tasks. This includes 39+ specialized skills such as:
+- **Orchestrators**: `main-orchestrator`, `unified-orchestrator`, `owasp-orchestrator`, `api-orchestrator` for coordinating complex assessments.
+- **Attack Agents**: `injection-agent`, `xss-agent`, `auth-agent`, `race-condition-agent` for targeted exploitation.
+- **Reconnaissance**: `recon-agent`, `network-recon-agent`, `service-enumeration-agent` for attack surface mapping.
+- **Validation**: `exploitability-validator`, `supply-chain-agent` for verifying findings and reducing false positives.
 
-### 1. Requisitos Previos
+### 3. Rules
+Operational guidelines and methodologies that govern the AI's behavior and decision-making process:
+- **Methodologies**: Bug Bounty Methodology, OWASP Top 10 2025.
+- **Scope Rules**: Definitions for defining engagement scope and exclusions.
+- **Validation Rules**: Strict criteria for verifying vulnerabilities before reporting (e.g., prohibiting speculation).
+- **Auto-Learning**: Rules for updating internal knowledge based on past experiences.
 
-- Tener instalado Gemini CLI.
-- Tener python3, node y npm instalados.
-- Se recomienda usar Kali Linux u otro entorno similar de seguridad.
+### 4. Orchestrators
+High-level logic definitions for coordinating multiple agents and skills to achieve complex objectives, such as a full security assessment or a specific vulnerability scan workflow.
 
-### 2. Instalacion de Contextos (Prompts)
+### 5. Knowledge & Writeups
+A database of reference material, including:
+- **Lessons Learned**: Records of past mistakes, false positives, and corrections to improve future performance.
+- **Writeups**: A collection of 180+ CTF and real-world bug bounty writeups indexed by vulnerability type and technology, used for reference and payload adaptation.
 
-Los archivos de contexto definen las reglas y conocimientos base de la IA.
+## Usage
 
-1. Contexto de Sistema:
-   Copia el archivo "prompts/system_context.md" a tu carpeta de configuracion global.
-   Comando: cp prompts/system_context.md ~/.gemini/GEMINI.md
-
-2. Contexto de Proyecto (Raiz):
-   Copia el archivo "prompts/root_context.md" a tu directorio de trabajo principal (ej. /home/kali).
-   Comando: cp prompts/root_context.md ~/gemini.md
-
-3. Contexto de Active Directory:
-   Si utilizas herramientas de AD, copia este archivo a tu carpeta especifica.
-   Comando: cp prompts/ad_context.md ~/ActiveDirectoryPentestingMCP/gemini.md
-
-### 3. Instalacion de Skills
-
-Las skills permiten a la IA ejecutar tareas complejas y especializadas.
-
-1. Crea el directorio de skills si no existe:
-   Comando: mkdir -p ~/.gemini/skills
-
-2. Copia las skills de este repositorio a tu configuracion:
-   Comando: cp -r skills/* ~/.gemini/skills/
-
-Esto instalara las skills: web-bugbounty-elite, linux-pentesting-elite y ad-pentesting-elite.
-
-### 4. Configuracion de Servidores MCP
-
-El archivo "config/mcp_config.json" contiene la configuracion de los servidores de herramientas.
-
-1. Copia el archivo de configuracion:
-   Comando: cp config/mcp_config.json ~/.gemini/antigravity/mcp_config.json
-
-2. Ajuste de Rutas (Importante):
-   El archivo mcp_config.json contiene rutas absolutas (ej: /home/kali/...). Debes editar este archivo y reemplazar "/home/kali" por la ruta de tu usuario actual si es diferente.
-   
-   Usa un editor de texto como nano o vim:
-   Comando: nano ~/.gemini/antigravity/mcp_config.json
-
-3. Dependencias:
-   Asegurate de que las rutas especificadas en el JSON apunten a scripts validos en tu sistema (ej. los scripts de python o node de cada servidor MCP deben existir en las carpetas indicadas).
-
-## Contenido
-
-- prompts/: Contiene los archivos .md de contexto.
-- skills/: Contiene los directorios de las skills personalizadas.
-- config/: Contiene el archivo mcp_config.json.
+This repository is designed to be integrated into an AI CLI environment. The components work together to provide a robust, consistent, and methodologically sound security testing framework.

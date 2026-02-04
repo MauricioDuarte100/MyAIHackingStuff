@@ -1,0 +1,12 @@
+# Web
+- [Alien complaint form](alien_compliant_form) - 110 solves / 325 points
+- [BlitzProp](blitzprop) - 559 solves / 300 points
+- [Bug Report](bug_report) - 208 solves / 300 points
+- [Caas](caas) - 797 solves / 300 points 
+- [Cessation](cessation) - 199 solves / 300 points
+- [DaaS](daas) - 408 solves / 300 points
+- [E.Tree](etree) - 357 solves / 300 points
+- [Emoji Voting](emoji_voting) - 269 solves / 300 solves
+- [MiniSTRyplace](ministryplace) - 1236 solves / 300 solves
+- [Starfleet](starfleet) - 141 solves / 325 points
+- [Wild Goose Hunt](wild_goose_hunt) - 515 solves / 300 points
