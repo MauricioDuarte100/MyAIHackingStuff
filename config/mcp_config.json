@@ -1,0 +1,82 @@
+{
+  "mcpServers": {
+    "bugbounty-hunter": {
+      "type": "stdio",
+      "command": "/home/kali/BugBountyHunterMCP/bb_venv/bin/python",
+      "args": [
+        "/home/kali/BugBountyHunterMCP/bug_bounty_mcp.py"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1",
+        "PYTHONPATH": "/home/kali/BugBountyHunterMCP"
+      },
+      "description": "BugBountyMCP - 43+ security testing tools (PRINCIPAL)",
+      "disabledTools": [
+        "smart_vuln_scan"
+      ]
+    },
+    "elite-recon": {
+      "command": "node",
+      "args": [
+        "/home/kali/security-ops/mcps/elite-recon-mcp/dist/index.js"
+      ],
+      "description": "Elite Recon - CNAME chains, JS secrets, cloud mapping"
+    },
+    "bugbounty-gokul": {
+      "command": "/home/kali/security-ops/mcps/bugbounty-gokul/venv/bin/python",
+      "args": [
+        "-m",
+        "bugbounty_mcp_server.cli",
+        "serve"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      },
+      "description": "Gokul BB - Subfinder, Amass, Nuclei, SQLMap",
+      "disabledTools": [
+        "subdomain_enumeration",
+        "dns_enumeration",
+        "whois_lookup",
+        "reverse_dns_lookup",
+        "port_scan",
+        "http_probe",
+        "nmap_scan",
+        "nikto_scan",
+        "wafw00f_scan",
+        "dirb_scan",
+        "gobuster_scan",
+        "feroxbuster_scan",
+        "nuclei_scan",
+        "sqlmap_scan",
+        "amass_scan",
+        "subfinder_scan",
+        "httpx_probe",
+        "waybackurls_discovery",
+        "gau_discovery",
+        "arjun_parameter_discovery",
+        "paramspider_mining",
+        "dalfox_xss_scan",
+        "ffuf_scan",
+        "wpscan_analyze",
+        "fierce_scan",
+        "dnsenum_scan",
+        "hakrawler_crawl",
+        "jaeles_vulnerability_scan"
+      ]
+    },
+    "slany-bugbounty": {
+      "command": "/home/kali/security-ops/mcps/slany-bugbounty/mcp_wrapper.sh",
+      "args": [],
+      "description": "Slany BB - Dorking, fuzzing, OSINT"
+    }
+  },
+  "security": {
+    "terminal_auto_exec": "off",
+    "require_approval_for": [
+      "network",
+      "filesystem-write",
+      "execute"
+    ],
+    "log_level": "debug"
+  }
+}
