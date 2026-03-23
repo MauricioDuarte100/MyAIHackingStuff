@@ -38,7 +38,7 @@ curl -v -c - "https://darkgreen-heron-900493.hostingersite.com/ctf8/"
 
 1. **Cookie de sesión**: El servidor establece una cookie llamada `bank_session`
 2. **Valor de la cookie**: String hexadecimal de 96 caracteres (48 bytes)
-3. **Ejemplo**: `ea9339fd2f62ad49f1ec411cde9029ef1545af2e4e14de6e191d184cae0c9357b732ec33942617b726c889571fd8d6d3`
+3. **Ejemplo**: `SECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITY26c889571fd8d6d3`
 
 ## Identificación de la Vulnerabilidad
 
