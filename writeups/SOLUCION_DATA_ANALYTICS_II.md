@@ -8,8 +8,8 @@ Hackear el Active Directory y exfiltrar el hash del administrador.
 ### 1. Reconocimiento y Reuso de Credenciales
 Utilizando las credenciales encontradas en la Parte I:
 - **carlos.cardenas**
-  - Access Key: `AKIA5HCACCPUM5JVDROJ`
-  - Secret Key: `nCcHPOtDk4j5DFnOqzqEy64UYuupX4tWCselUUZF`
+  - Access Key: `AKIA_REDACTED_BY_ANTIGRAVITY`
+  - Secret Key: `SECRET_REDACTED_BY_ANTIGRAVITY`
 
 Identificamos el Controlador de Dominio (DC) mediante enumeración de EC2:
 - **Instance ID**: `i-0ab87fea8417ae245`
