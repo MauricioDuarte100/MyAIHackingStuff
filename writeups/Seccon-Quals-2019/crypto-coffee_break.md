@@ -11,7 +11,7 @@ gYYpbhlXwuM59PtV1qctnQ==
 
 The following text is ciphertext with "encrypt.py".
 
-FyRyZNBO2MG6ncd3hEkC/yeYKUseI/CxYoZiIeV2fe/Jmtwx+WbWmU1gtMX9m905
+SECRET_REDACTED_BY_ANTIGRAVITYfe/Jmtwx+WbWmU1gtMX9m905
 
 Please download "encrypt.py" from the following url.
 
@@ -52,7 +52,7 @@ def decrypt(key, cyphertext):
         text += chr( (  (   (    ord(chr(cyphertext[i])) - 0x20    ) - (    ord(     key[i % len(key)]     ) - 0x20    )   ) % (0x7e - 0x20 + 1)  ) + 0x20)
     return text
 
-cypher = base64.b64decode("FyRyZNBO2MG6ncd3hEkC/yeYKUseI/CxYoZiIeV2fe/Jmtwx+WbWmU1gtMX9m905")
+cypher = base64.b64decode("SECRET_REDACTED_BY_ANTIGRAVITYfe/Jmtwx+WbWmU1gtMX9m905")
 dec2 = cipher.decrypt(cypher)
 print(decrypt(key1,dec2))
 
