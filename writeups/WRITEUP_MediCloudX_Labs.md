@@ -201,7 +201,7 @@ El storage account probablemente tiene esta configuración:
            "equals": "Microsoft.Storage/storageAccounts"
          },
          {
-           "field": "Microsoft.Storage/storageAccounts/allowBlobPublicAccess",
+           "field": "Microsoft.SECRET_REDACTED_BY_ANTIGRAVITYccess",
            "equals": "true"
          }
        ]
