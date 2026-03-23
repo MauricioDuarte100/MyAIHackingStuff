@@ -85,7 +85,7 @@ if ($lhs == $rhs) {
   "chars": "sauzsc4ntr0h$",
   "note": "find the password such that (s*G - R) mod p == (sha256(password)*P) mod p",
   "meta": {
-    "encrypted_flag": "ff38caaeba8002bb64cdcecc50083e80b1f9a1caf16a0cae513d",
+    "encrypted_flag": "SECRET_REDACTED_BY_ANTIGRAVITYf16a0cae513d",
     "nonce": "bae72cec0790b0b9"
   }
 }
@@ -145,7 +145,7 @@ import hashlib
 
 password = 'schn0rr$'
 nonce = bytes.fromhex('bae72cec0790b0b9')
-encrypted_flag = bytes.fromhex('ff38caaeba8002bb64cdcecc50083e80b1f9a1caf16a0cae513d')
+encrypted_flag = bytes.fromhex('SECRET_REDACTED_BY_ANTIGRAVITYf16a0cae513d')
 
 key_hash = hashlib.sha256(password.encode()).digest()
 rc4_key = key_hash + nonce
