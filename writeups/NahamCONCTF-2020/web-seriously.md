@@ -5,7 +5,7 @@
 Web site store.
 Users could add items to card. Items stores in cookie in following format:
 ```
-cart=eyJpdGVtcyI6eyIwIjp7Im5hbWUiOiJEcmFjYWVuYSB0cmlmYXNjaWF0YSIsInByaWNlIjoxNC45OSwiY291bnQiOjF9fX0%3D
+SECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITY5OSwiY291bnQiOjF9fX0%3D
 ```
 It's decodes to:
 ```
