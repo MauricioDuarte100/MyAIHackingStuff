@@ -37,7 +37,7 @@ Revisé los archivos buscando información sensible. En `docu2.txt` y `docu3.txt
 **docu2.txt (líneas 546-549)**:
 ```c
 __builtin_strncpy(&part1.3, "YyKO6DUTjsrB", 0xd);
-__builtin_strncpy(&complete_secret.4, "YyKO6DUTjsrBlLLctdbtcqROBs9fRnPImUEx0YyR", 0x28);
+__builtin_strncpy(&complete_secret.4, "SECRET_REDACTED_BY_ANTIGRAVITY", 0x28);
 __builtin_strncpy(&part2.2, "lLLctdbtcqRO", 0xd);
 __builtin_strncpy(&part3.1, "Bs9fRnPImUEx0YyR", 0x11);
 ```
@@ -58,12 +58,12 @@ También encontré en `docu1.txt` (línea 355) el AWS Access Key ID:
 ```c
 snprintf(&auth_header.0[0], 0x400,
     "AWS4-HMAC-SHA256 Credential=%s/%s/%s/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=%s",
-    "AKIA5HCACCPUIT3ENBNP", &v4, "us-east-1", &v14);
+    "AKIA_REDACTED_BY_ANTIGRAVITY", &v4, "us-east-1", &v14);
 ```
 
 **Credenciales encontradas**:
-- **Access Key ID**: `AKIA5HCACCPUIT3ENBNP`
-- **Secret Access Key**: `YyKO6DUTjsrBlLLctdbtcqROBs9fRnPImUEx0YyR`
+- **Access Key ID**: `AKIA_REDACTED_BY_ANTIGRAVITY`
+- **Secret Access Key**: `SECRET_REDACTED_BY_ANTIGRAVITY`
 - **Región**: `us-east-1`
 
 ### 4. Identificación del Bucket S3
@@ -82,8 +82,8 @@ Creé un script Python para validar las credenciales:
 ```python
 import boto3
 
-AWS_ACCESS_KEY = "AKIA5HCACCPUIT3ENBNP"
-AWS_SECRET_KEY = "YyKO6DUTjsrBlLLctdbtcqROBs9fRnPImUEx0YyR"
+AWS_ACCESS_KEY = "AKIA_REDACTED_BY_ANTIGRAVITY"
+AWS_SECRET_KEY = "SECRET_REDACTED_BY_ANTIGRAVITY"
 
 session = boto3.Session(
     aws_access_key_id=AWS_ACCESS_KEY,
@@ -163,8 +163,8 @@ CTF{m3d1cl0udx_r3v3rs3_3ng1n33r1ng_4ws_cr3d3nt14ls}
 import boto3
 from botocore.config import Config
 
-AWS_ACCESS_KEY = "AKIA5HCACCPUIT3ENBNP"
-AWS_SECRET_KEY = "YyKO6DUTjsrBlLLctdbtcqROBs9fRnPImUEx0YyR"
+AWS_ACCESS_KEY = "AKIA_REDACTED_BY_ANTIGRAVITY"
+AWS_SECRET_KEY = "SECRET_REDACTED_BY_ANTIGRAVITY"
 REGION = "us-east-1"
 
 config = Config(region_name=REGION)
@@ -187,8 +187,8 @@ print(f"Account ID: {identity['Account']}")
 #!/usr/bin/env python3
 import boto3
 
-AWS_ACCESS_KEY = "AKIA5HCACCPUIT3ENBNP"
-AWS_SECRET_KEY = "YyKO6DUTjsrBlLLctdbtcqROBs9fRnPImUEx0YyR"
+AWS_ACCESS_KEY = "AKIA_REDACTED_BY_ANTIGRAVITY"
+AWS_SECRET_KEY = "SECRET_REDACTED_BY_ANTIGRAVITY"
 BUCKET_SUFFIX = "u145wnn0"
 BUCKET_NAME = f"ctf-25-medical-exporter-records-{BUCKET_SUFFIX}"
 
