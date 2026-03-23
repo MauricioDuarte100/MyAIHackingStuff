@@ -62,7 +62,7 @@ __builtin_strncpy(&var_3c3, ".4c6f6f6b20636c6f73657221", 0x1b);
 #### String 2 (línea 1030 de datos2.txt):
 ```c
 __builtin_strncpy(&var_3f3,
-    ".414c507b77346d75702d723376337273316e6721217d", 0x2f);
+    ".SECRET_REDACTED_BY_ANTIGRAVITY217d", 0x2f);
 ```
 
 ### 5. Conversión Hexadecimal a ASCII
@@ -75,11 +75,11 @@ echo "4c6f6f6b20636c6f73657221" | xxd -r -p
 ```
 **Resultado:** `Look closer!`
 
-**String 2:** `.414c507b77346d75702d723376337273316e6721217d`
+**String 2:** `.SECRET_REDACTED_BY_ANTIGRAVITY217d`
 
 Removiendo el punto inicial y convirtiendo:
 ```bash
-echo "414c507b77346d75702d723376337273316e6721217d" | xxd -r -p
+echo "SECRET_REDACTED_BY_ANTIGRAVITY217d" | xxd -r -p
 ```
 **Resultado:** `ALP{w4mup-r3v3rs1ng!!}`
 
@@ -108,7 +108,7 @@ El mensaje escrito depende de una condición:
 if (data_40800c > 0x1337 && !memcmp(_Buf1, &data_407250, 1))
 {
     // Escribe la FLAG
-    _Str = ".414c507b77346d75702d723376337273316e6721217d";
+    _Str = ".SECRET_REDACTED_BY_ANTIGRAVITY217d";
 }
 else
 {
