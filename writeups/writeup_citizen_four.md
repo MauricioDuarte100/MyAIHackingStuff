@@ -93,5 +93,5 @@ Al inspeccionar la respuesta HTTP desencriptada (HTTP 200 OK) proveniente de `17
 
 **Flag:**
 ```
-UNLP{Assume-your4dversary1sCapabl3of0neTrillionGuessesPer5econd}
+UNLP{Assume-SECRET_REDACTED_BY_ANTIGRAVITYesPer5econd}
 ```
