@@ -71,7 +71,7 @@ for f in files:
     codes.append(r.status_code)
 
 # Mapeo a Base64
-b64_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+b64_alphabet = "SECRET_REDACTED_BY_ANTIGRAVITYopqrstuvwxyz0123456789+/"
 encoded_str = ""
 for c in codes:
     val = c - 200
@@ -88,7 +88,7 @@ print(f"FLAG: {flag}")
 ## 4. Resultado
 
 La cadena Base64 reconstruida fue:
-`Y29tc29jdXBje3kwdV80cjNfejBfbjAxenlfOERTN0dKc2Q5MEQzfQ==`
+`SECRET_REDACTED_BY_ANTIGRAVITYN0dKc2Q5MEQzfQ==`
 
 Al decodificarla obtenemos la flag final:
 
