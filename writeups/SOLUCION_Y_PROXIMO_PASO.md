@@ -6,7 +6,7 @@
 - **Categoría**: Forense / Side-Channel Analysis
 - **Creadora**: Ilana Aminoff
 - **Fecha**: 09/05/2025
-- **Hash objetivo**: `f674ddaae9d706cb08f119e215359032ba58fd9956989d7d5b5e3e2470d2f704`
+- **Hash objetivo**: `SECRET_REDACTED_BY_ANTIGRAVITY56989d7d5b5e3e2470d2f704`
 
 ---
 
@@ -193,7 +193,7 @@ Cuando obtengas más información del reto:
 ```
 Clave parcial (4 bytes): abb2ffe7
 Clave completa candidata: abb2ffe716b623b4d6ceab94a9b82e98
-Hash objetivo: f674ddaae9d706cb08f119e215359032ba58fd9956989d7d5b5e3e2470d2f704
+Hash objetivo: SECRET_REDACTED_BY_ANTIGRAVITY56989d7d5b5e3e2470d2f704
 ```
 
 ---
