@@ -244,7 +244,7 @@ Línea 48: 010079000f500001 → mem[0x0F50] = 0x79 = 'y'
 
 **CodeString completo (37 bytes):**
 ```
-Hex: 633f3f414141242f2f26322f2f6b646f6f6f6f242f312632325f32242d6c416d6e5f6b6579
+Hex: SECRET_REDACTED_BY_ANTIGRAVITY2f312632325f32242d6c416d6e5f6b6579
 ASCII: c??AAA$//&2//kdoooo$/1&22_2$-lAmn_key
 ```
 
@@ -294,7 +294,7 @@ Línea 85: 010062000fb40001 → mem[0x0FB4] = 0x62 = 'b'
 
 **Ciphertext completo (37 bytes):**
 ```
-Hex: 637b245a695263366b0e0c073073632b476d4760362c613c204c1a27322a45457a40287e62
+Hex: SECRET_REDACTED_BY_ANTIGRAVITY362c613c204c1a27322a45457a40287e62
 ```
 
 ---
@@ -310,8 +310,8 @@ Tenemos tres elementos clave:
 | Nombre | Dirección | Tamaño | Contenido Hex |
 |--------|-----------|--------|---------------|
 | Keyfile | 0x0FC8 | 11 bytes | `6b65792e6d737061636500` |
-| CodeString | 0x0F2C | 37 bytes | `633f3f414141242f2f26322f2f6b646f6f6f6f242f312632325f32242d6c416d6e5f6b6579` |
-| Ciphertext | 0x0F90 | 37 bytes | `637b245a695263366b0e0c073073632b476d4760362c613c204c1a27322a45457a40287e62` |
+| CodeString | 0x0F2C | 37 bytes | `SECRET_REDACTED_BY_ANTIGRAVITY2f312632325f32242d6c416d6e5f6b6579` |
+| Ciphertext | 0x0F90 | 37 bytes | `SECRET_REDACTED_BY_ANTIGRAVITY362c613c204c1a27322a45457a40287e62` |
 
 ---
 
@@ -321,8 +321,8 @@ Tenemos tres elementos clave:
 
 ```python
 # Datos extraídos del PCAP
-ciphertext_hex = "637b245a695263366b0e0c073073632b476d4760362c613c204c1a27322a45457a40287e62"
-codestring_hex = "633f3f414141242f2f26322f2f6b646f6f6f6f242f312632325f32242d6c416d6e5f6b6579"
+ciphertext_hex = "SECRET_REDACTED_BY_ANTIGRAVITY362c613c204c1a27322a45457a40287e62"
+codestring_hex = "SECRET_REDACTED_BY_ANTIGRAVITY2f312632325f32242d6c416d6e5f6b6579"
 
 # Convertir de hexadecimal a bytes
 ciphertext = bytes.fromhex(ciphertext_hex)
@@ -381,7 +381,7 @@ Posición 2:
 
 **Resultado del XOR:**
 ```
-Hex: 00441b1b2813471944283e281f18074428022844191d470e121328031f460428141f431b1b
+Hex: SECRET_REDACTED_BY_ANTIGRAVITY191d470e121328031f460428141f431b1b
 Lista: [0, 68, 27, 27, 40, 19, 71, 25, 68, 40, 62, 40, 31, 24, 7, 68, 40, 2, 40, 68, 25, 29, 71, 14, 18, 19, 40, 3, 31, 70, 4, 40, 20, 31, 67, 27, 27]
 ```
 
@@ -582,13 +582,13 @@ if __name__ == "__main__":
 
 ```bash
 $ python3 solve.py
-============================================================
+SECRET_REDACTED_BY_ANTIGRAVITY====================
 FLAG ENCONTRADA
-============================================================
+SECRET_REDACTED_BY_ANTIGRAVITY====================
 
   w3ll_d0n3_I_hop3_u_3nj0yed_th1s_ch4ll
 
-============================================================
+SECRET_REDACTED_BY_ANTIGRAVITY====================
 
 Significado (Leetspeak → Español):
   'well done I hope you enjoyed this chall'
