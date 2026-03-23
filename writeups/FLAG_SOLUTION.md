@@ -18,7 +18,7 @@ Esto nos permite *predecir* la clave secreta con solo 2001 intentos de fuerza br
 
 ## Pasos para la resolución
 
-1.  **Obtener un token de invitado**: Se realizó una petición `GET` a la URL `https://jwt2025.ctf.cert.unlp.edu.ar/` sin un encabezado `Authorization`. El servidor respondió con un `401 UNAUTHORIZED` y un encabezado `WWW-Authenticate` que contenía un token JWT de invitado (ej: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiZ3Vlc3QiLCJpYXQiOjE3NjQ4NTE3NTR9.XMciIX81gfS81NjECritMc-iUT0JZgPBy7jUyn5Dg3k`).
+1.  **Obtener un token de invitado**: Se realizó una petición `GET` a la URL `https://jwt2025.ctf.cert.unlp.edu.ar/` sin un encabezado `Authorization`. El servidor respondió con un `401 UNAUTHORIZED` y un encabezado `WWW-Authenticate` que contenía un token JWT de invitado (ej: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.SECRET_REDACTED_BY_ANTIGRAVITYNTR9.XMciIX81gfS81NjECritMc-iUT0JZgPBy7jUyn5Dg3k`).
 
 2.  **Fuerza bruta de la clave secreta**:
     *   Se escribió un script en Python (`solve.py`) para replicar el proceso de generación de claves del servidor.
@@ -31,7 +31,7 @@ Esto nos permite *predecir* la clave secreta con solo 2001 intentos de fuerza br
 3.  **Falsificación del token JWT**:
     *   Una vez que se obtuvo la clave secreta, se creó un nuevo payload para el JWT con privilegios elevados: `{"role": "superuser", "user": "admin"}`.
     *   Se codificó este payload usando la clave secreta descubierta (`Rem1xKey86426418499`) y el algoritmo `HS256`.
-    *   El token falsificado resultante fue: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic3VwZXJ1c2VyIiwidXNlciI6ImFkbWluIn0.lLSrgzIJUPek_cBhkAzeqtch9c8TTg4gyIuafOrcVG0`.
+    *   El token falsificado resultante fue: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.SECRET_REDACTED_BY_ANTIGRAVITYbWluIn0.lLSrgzIJUPek_cBhkAzeqtch9c8TTg4gyIuafOrcVG0`.
 
 4.  **Obtención de la Flag**:
     *   Se envió una petición `GET` a `https://jwt2025.ctf.cert.unlp.edu.ar/` con el encabezado `Authorization: Bearer <token_falsificado>`.
