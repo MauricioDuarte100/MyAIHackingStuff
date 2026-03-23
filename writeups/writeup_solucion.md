@@ -83,14 +83,14 @@ Analizando las instrucciones `0x01` (INIT_MEM), reconstruimos la memoria inicial
 ### 4.1 CodeString (0x0F2C - 37 bytes)
 
 ```
-Hex: 633f3f414141242f2f26322f2f6b646f6f6f6f242f312632325f32242d6c416d6e5f6b6579
+Hex: SECRET_REDACTED_BY_ANTIGRAVITY2f312632325f32242d6c416d6e5f6b6579
 ASCII: c??AAA$//&2//kdoooo$/1&22_2$-lAmn_key
 ```
 
 ### 4.2 Ciphertext (0x0F90 - 37 bytes)
 
 ```
-Hex: 637b245a695263366b0e0c073073632b476d4760362c613c204c1a27322a45457a40287e62
+Hex: SECRET_REDACTED_BY_ANTIGRAVITY362c613c204c1a27322a45457a40287e62
 ASCII: c{$ZiRc6k...0sc+GmG`6,a< L'2*EEz@(~b
 ```
 
@@ -126,7 +126,7 @@ xor_base = bytes([ciphertext[i] ^ codestring[i] for i in range(37)])
 
 Resultado intermedio:
 ```
-Hex: 00441b1b2813471944283e281f18074428022844191d470e121328031f460428141f431b1b
+Hex: SECRET_REDACTED_BY_ANTIGRAVITY191d470e121328031f460428141f431b1b
 Decimal: [0, 68, 27, 27, 40, 19, 71, 25, 68, 40, 62, 40, 31, 24, 7, 68, 40, 2, 40, 68, 25, 29, 71, 14, 18, 19, 40, 3, 31, 70, 4, 40, 20, 31, 67, 27, 27]
 ```
 
