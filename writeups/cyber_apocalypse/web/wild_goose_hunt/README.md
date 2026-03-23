@@ -6,7 +6,7 @@ Outdated Alien technology has been found by the human resistance. The system mig
 ```
 Along with the [source code](web_wild_goose_hunt).
 
-The website was a login system, and as we see in the source code, it uses MongoDB. Since I didn't see anything else special, I assumed we had to do [NoSQL injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection). 
+The website was a login system, and as we see in the source code, it uses MongoDB. Since I didn't see anything else special, I assumed we had to do [NoSQL injection](https://github.SECRET_REDACTED_BY_ANTIGRAVITYe/master/NoSQL%20Injection). 
 
 I tried sending in one of the examples from PayloadsAllTheThings;
 ```json

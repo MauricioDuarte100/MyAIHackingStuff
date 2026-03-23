@@ -8,7 +8,7 @@ Along with an [XML file](military.xml) (but with all fields redacted).
 
 The website had a search field where you could search for the name of military members, to see if they existed. I tried writing some different names, but only got `This millitary staff member doesn't exist.`
 
-I assumed that the redacted XML file was what the website searched in, and after a bit of looking around I learnt of [XPATH injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XPATH%20Injection). I tested the payload `' or '1'='1`, and got the response `This millitary staff member exists.`. 
+I assumed that the redacted XML file was what the website searched in, and after a bit of looking around I learnt of [XPATH injection](https://github.SECRET_REDACTED_BY_ANTIGRAVITYe/master/XPATH%20Injection). I tested the payload `' or '1'='1`, and got the response `This millitary staff member exists.`. 
 
 As I don't believe that there was a way for me to get any output, I had to do blind injection. As I had the format of the XML file, I knew the flag was split into the 2 locations; `//military/district[position()=2]/staff[position()=3]/selfDestructCode` and `//military/district[position()=3]/staff[position()=2]/selfDestructCode`. 
 
