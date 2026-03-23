@@ -29,4 +29,4 @@ http://logs_in.sharkyctf.xyz/_profiler/open?file=src/Controller/MainController.p
 
 ```
 
-http://logs_in.sharkyctf.xyz/e48e13207341b6bffb7fb1622282247b/debug
+http://logs_in.sharkyctf.SECRET_REDACTED_BY_ANTIGRAVITYug
