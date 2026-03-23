@@ -39,7 +39,7 @@ El programa:
 Usando `objdump -s -j .rodata crackme` se extrajo el hash SHA256 esperado:
 
 ```
-fcf730b6d95236ecd3c9fc2d92d7b6b2bb061514961aec041d6c7a7192f592e4
+SECRET_REDACTED_BY_ANTIGRAVITY961aec041d6c7a7192f592e4
 ```
 
 ### 5. Cracking del hash
@@ -48,7 +48,7 @@ El hash corresponde a un password común que se puede encontrar en bases de dato
 
 ```bash
 $ echo -n "secret123" | sha256sum
-fcf730b6d95236ecd3c9fc2d92d7b6b2bb061514961aec041d6c7a7192f592e4
+SECRET_REDACTED_BY_ANTIGRAVITY961aec041d6c7a7192f592e4
 ```
 
 ### 6. Verificación
