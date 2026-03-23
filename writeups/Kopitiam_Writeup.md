@@ -30,7 +30,7 @@ Al analizar el código ensamblador (o usar `ltrace`), vemos una rutina de decodi
 
 1.  **Lógica:** Input -> Morse -> Base32 -> Comparación.
 2.  **Cadena Objetivo (Base32):** Se encuentra en la memoria o en el binario (`strings` ayuda aquí).
-    *   Cadena: `FUXC2IBNFUWSALRNFUXCALROEAWS2LJNFU======`
+    *   Cadena: `SECRET_REDACTED_BY_ANTIGRAVITY`
 3.  **Solución:** Decodificar Base32 a Morse y luego Morse a Texto.
 
 ### Script Solver (Nivel 1)
@@ -38,7 +38,7 @@ Al analizar el código ensamblador (o usar `ltrace`), vemos una rutina de decodi
 import base64
 
 # Cadena extraída del binario
-b32 = "FUXC2IBNFUWSALRNFUXCALROEAWS2LJNFU======"
+b32 = "SECRET_REDACTED_BY_ANTIGRAVITY"
 
 # Decodificamos Base32
 decoded_bytes = base64.b32decode(b32)
@@ -64,14 +64,14 @@ El segundo nivel utiliza una codificación **Base58** personalizada y una operac
 
 1.  **Lógica:** Input -> XOR ("SG") -> Base58 -> Comparación.
 2.  **Alfabeto Base58:** Encontramos un alfabeto no estándar en el binario:
-    `123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz`
+    `SECRET_REDACTED_BY_ANTIGRAVITYhijkmnopqrstuvwxyz`
 3.  **Cadena Objetivo:** `2V1ncHsTCX`
 4.  **Solución:** Decodificar Base58 (usando el alfabeto custom) y luego hacer XOR con la clave "SG".
 
 ### Script Solver (Nivel 2)
 ```python
 # Alfabeto encontrado en el binario (offset 0x36ac00)
-ALPHABET = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
+ALPHABET = "SECRET_REDACTED_BY_ANTIGRAVITYhijkmnopqrstuvwxyz"
 
 def b58decode(s):
     n = 0
