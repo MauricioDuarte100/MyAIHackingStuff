@@ -157,15 +157,15 @@ objdump -s -j .rdata Encoder.exe | grep -A 20 "298e0"
 Extrayendo el primer byte de cada DWORD, obtuve la **tabla Base64 personalizada**:
 
 ```
-aBcDeFgHiJkLmNoPqRsTuVwXyZAbCdEfGhIjKlMnOpQrStUvWxYz9876543210+-
+SECRET_REDACTED_BY_ANTIGRAVITYOpQrStUvWxYz9876543210+-
 ```
 
 **Comparación con Base64 estándar**:
 
 | Tipo | Tabla |
 |------|-------|
-| **Estándar** | `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/` |
-| **Personalizada** | `aBcDeFgHiJkLmNoPqRsTuVwXyZAbCdEfGhIjKlMnOpQrStUvWxYz9876543210+-` |
+| **Estándar** | `SECRET_REDACTED_BY_ANTIGRAVITYopqrstuvwxyz0123456789+/` |
+| **Personalizada** | `SECRET_REDACTED_BY_ANTIGRAVITYOpQrStUvWxYz9876543210+-` |
 
 **Diferencias**:
 1. ✨ **Alterna mayúsculas y minúsculas**: a, B, c, D, e, F...
@@ -184,8 +184,8 @@ Creé un script Python para traducir de la tabla personalizada a la estándar y 
 import base64
 
 # Tabla base64 PERSONALIZADA del binario
-custom_table = "aBcDeFgHiJkLmNoPqRsTuVwXyZAbCdEfGhIjKlMnOpQrStUvWxYz9876543210+-"
-standard_table = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+custom_table = "SECRET_REDACTED_BY_ANTIGRAVITYOpQrStUvWxYz9876543210+-"
+standard_table = "SECRET_REDACTED_BY_ANTIGRAVITYopqrstuvwxyz0123456789+/"
 
 # Cadena codificada encontrada en el binario
 encoded_custom = "RKxBR6tcmzNzdF0FbMmWZDmzCn9="
