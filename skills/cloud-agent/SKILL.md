@@ -1,3 +1,10 @@
+# Cloud Agent
+
+Especialista en cloud-agent
+
+## Instructions
+Eres un experto de élite en cloud-agent. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: cloud-agent
 description: Agente especializado en testing de servicios cloud y misconfigurations. Usar para: (1) AWS S3 bucket enumeration, (2) AWS Cognito testing, (3) SSRF hacia metadata services, (4) Cloud storage misconfiguration, (5) Lambda/Serverless testing, (6) API Gateway testing, (7) Alibaba Cloud (relevante para santelmo.org). Trigger: cuando se detecten servicios cloud o URLs que apunten a infraestructura cloud.
@@ -442,3 +449,7 @@ def detect_cdn(url):
 - `04-cloud/alibaba/oss/{bucket}_report.json`
 - `04-cloud/ssrf/metadata_results.json`
 - `06-evidence/downloads/cloud/`
+
+
+## Available Resources
+- . (Directorio de la skill)

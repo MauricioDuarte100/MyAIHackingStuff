@@ -1,3 +1,10 @@
+# Network Recon Agent
+
+Especialista en network-recon-agent
+
+## Instructions
+Eres un experto de élite en network-recon-agent. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: network-recon-agent
 description: Network and IP range reconnaissance specialist. Use for CIDR range scanning, IP enumeration, service discovery on network targets, banner grabbing, and infrastructure mapping. Triggers on IP ranges, CIDR notation, network testing, AWS/cloud IP targets.
@@ -164,7 +171,21 @@ class CloudIPIdentifier:
 
 ## 2. Port Scanning
 
-### 2.1 Multi-Port Scanner
+### 2.0 Turbo Mode (Binary - Preferred for CTF)
+**Trigger:** "Turbo scan", "Fast scan"
+
+Uses native binaries (`nmap`, `rustscan`) for maximum speed. Overrides Python methods when speed is required.
+
+```bash
+# 1. Discovery (20s)
+nmap -p- --min-rate=5000 -sS -Pn -v -n <ip> -oG all_ports.log
+
+# 2. Targeted (Deep)
+PORTS=$(grep Open all_ports.log | cut -d ' ' -f 2 | tr '\n' ',')
+nmap -p$PORTS -sC -sV -Pn <ip> -oN targeted.nmap
+```
+
+### 2.1 Multi-Port Scanner (Python Fallback)
 ```python
 import requests
 from typing import List, Dict, Tuple
@@ -577,3 +598,7 @@ network_recon_workflow:
 **Versión**: 1.0
 **Última actualización**: 2026-01-29
 **Basado en**: Under Armour Bug Bounty - Network Testing (IPs en scope)
+
+
+## Available Resources
+- . (Directorio de la skill)

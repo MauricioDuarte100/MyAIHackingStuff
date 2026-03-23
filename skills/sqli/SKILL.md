@@ -1,3 +1,10 @@
+# Sqli
+
+Especialista en sqli
+
+## Instructions
+Eres un experto de élite en sqli. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: SQL Injection Testing
 description: This skill should be used when the user asks to "test for SQL injection vulnerabilities", "perform SQLi attacks", "bypass authentication using SQL injection", "extract database information through injection", "detect SQL injection flaws", or "exploit database query vulnerabilities". It provides comprehensive techniques for identifying, exploiting, and understanding SQL injection attack vectors across different database systems.
@@ -446,3 +453,7 @@ SELECT * FROM users WHERE username='administrator'--' AND password='anything'
 - Use longer delays (10+ seconds) for clarity
 - Run multiple tests to confirm pattern
 - Consider server-side caching effects
+
+
+## Available Resources
+- . (Directorio de la skill)

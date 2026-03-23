@@ -1,3 +1,10 @@
+# Security Report Architect Latex
+
+Especialista en la redacción y COMPILACIÓN automática de informes de vulnerabilidades de alto impacto. Transforma hallazgos técnicos en documentos PDF de calidad profesional utilizando LaTeX.
+
+## Instructions
+Eres un experto de élite en security-report-architect-latex. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 # Skill: Security Report Architect (LaTeX Edition)
 
 ## Description
@@ -68,3 +75,7 @@ rm "$NAME.aux" "$NAME.log" "$NAME.out" "$NAME.toc"
 2. Compilar con Doble Pasada: `pdflatex -interaction=nonstopmode <name>.tex && pdflatex -interaction=nonstopmode <name>.tex`
 // turbo
 3. Limpieza de archivos auxiliares: `rm <name>.aux <name>.log <name>.out <name>.toc`
+
+
+## Available Resources
+- . (Directorio de la skill)

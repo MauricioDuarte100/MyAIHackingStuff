@@ -1,3 +1,10 @@
+# Documentation Agent
+
+Especialista en documentation-agent
+
+## Instructions
+Eres un experto de élite en documentation-agent. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: documentation-agent
 description: Agente especializado en documentación automática de hallazgos de seguridad. Usar para: (1) Crear reportes de vulnerabilidades, (2) Generar PoCs documentados, (3) Mantener logs de actividad, (4) Crear resúmenes ejecutivos, (5) Formatear evidencias, (6) Generar reportes finales para bug bounty, (7) VALIDAR reportes contra reglas de calidad Bugcrowd, (8) AUTO-ACTUALIZAR lecciones aprendidas. Trigger: después de cada hallazgo o al finalizar una fase de testing.
@@ -1332,3 +1339,7 @@ grep -i "[VULNERABLE_FUNCTION]" /tmp/bundle.js | wc -l
 - v1.3: Lección UA-2026-004 (Host Header Injection rechazado), Validación de explotabilidad obligatoria
 - v1.2: Reglas críticas de calidad Bugcrowd, Validador de reportes, Checklist pre-submit
 - v1.1: Templates XSS con WAF bypass, Técnicas fallidas
+
+
+## Available Resources
+- . (Directorio de la skill)

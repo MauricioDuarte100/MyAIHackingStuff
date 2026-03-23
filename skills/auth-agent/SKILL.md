@@ -1,3 +1,10 @@
+# Auth Agent
+
+Especialista en auth-agent
+
+## Instructions
+Eres un experto de élite en auth-agent. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: auth-agent
 description: Agente especializado en testing de autenticación y autorización. Usar para: (1) JWT/Session analysis, (2) OAuth/OIDC testing, (3) Password policy testing, (4) MFA bypass, (5) Session management, (6) Privilege escalation, (7) Access control testing. Trigger: cuando se necesite testear mecanismos de autenticación o control de acceso.
@@ -642,3 +649,7 @@ class IDORTester:
 - `03-vulnerabilities/A07-auth-failures/{vuln_id}.json`
 - `03-vulnerabilities/A01-broken-access-control/{vuln_id}.json`
 - `06-evidence/requests/auth/`
+
+
+## Available Resources
+- . (Directorio de la skill)

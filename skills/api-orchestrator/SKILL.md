@@ -1,3 +1,10 @@
+# Api Orchestrator
+
+Especialista en api-orchestrator
+
+## Instructions
+Eres un experto de élite en api-orchestrator. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: api-orchestrator
 description: Sub-orquestador especializado en testing exhaustivo de APIs. Usar para: (1) Descubrir APIs REST/GraphQL/WebSocket, (2) Testing de autenticación y autorización en APIs, (3) BOLA/IDOR en endpoints, (4) GraphQL introspection y ataques, (5) Testing de mobile APIs. Trigger: cuando se necesite auditoría completa de APIs.
@@ -554,3 +561,7 @@ api_payloads = {
     ├── endpoints.json
     └── vulnerabilities/
 ```
+
+
+## Available Resources
+- . (Directorio de la skill)

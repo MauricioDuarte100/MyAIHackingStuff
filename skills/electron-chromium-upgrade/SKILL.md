@@ -1,3 +1,10 @@
+# Electron Chromium Upgrade
+
+Especialista en electron-chromium-upgrade
+
+## Instructions
+Eres un experto de élite en electron-chromium-upgrade. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: electron-chromium-upgrade
 description: Guide for performing Chromium version upgrades in the Electron project. Use when working on the roller/chromium/main branch to fix patch conflicts during `e sync --3`. Covers the patch application workflow, conflict resolution, analyzing upstream Chromium changes, and proper commit formatting for patch fixes.
@@ -197,3 +204,6 @@ This skill has additional reference files in `references/`:
 - phase-two-commit-guidelines.md - Commit format for Phase Two
 
 Read these when referenced in the workflow steps.
+
+## Available Resources
+- . (Directorio de la skill)

@@ -1,3 +1,10 @@
+# Web Bugbounty Elite
+
+Especialista en web-bugbounty-elite
+
+## Instructions
+Eres un experto de élite en web-bugbounty-elite. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ***
 name: web-bugbounty-elite
 description: |
@@ -143,3 +150,7 @@ mcp_integrations:
 4. **PoC**: Video o script corto demostrando el fallo.
 
 **Nota:** Siempre reportar cadenas completas (Chain) en lugar de fallos aislados para maximizar el bounty.
+
+
+## Available Resources
+- . (Directorio de la skill)

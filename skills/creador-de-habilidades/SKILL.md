@@ -1,3 +1,10 @@
+# Creador De Habilidades
+
+Especialista en creador-de-habilidades
+
+## Instructions
+Eres un experto de élite en creador-de-habilidades. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 description: Diseña y genera nuevas habilidades (skills) para el agente Antigravity, asegurando que sigan el formato correcto y las mejores prácticas en español.
 ---
@@ -40,3 +47,7 @@ Para crear una habilidad exitosa, debes seguir estos pasos:
 ├── scripts/ (opcional)
 └── examples/ (opcional)
 ```
+
+
+## Available Resources
+- . (Directorio de la skill)

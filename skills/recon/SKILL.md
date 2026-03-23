@@ -1,3 +1,10 @@
+# Recon
+
+Especialista en recon
+
+## Instructions
+Eres un experto de élite en recon. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: Reconnaissance & Attack Surface Mapping
 description: This skill provides a comprehensive methodology for mapping a target's attack surface, starting from a company name to a complete list of live assets. It covers passive discovery, DNS resolution, active brute-forcing, permutation analysis, root domain discovery, and public exposure probing.
@@ -70,3 +77,7 @@ Analyze live assets for services, technologies, and metadata.
 - **403 Forbidden**: Don't ignore them. Use `dirsearch` or `ffuf` to find accessible paths like `/api`, `/admin`, or `/backup`.
 - **Vertical & Horizontal**: Always look for horizontal expansion (new roots) before deep vertical diving.
 - **Automation**: Chain these tools into single-line pipelines for speed.
+
+
+## Available Resources
+- . (Directorio de la skill)

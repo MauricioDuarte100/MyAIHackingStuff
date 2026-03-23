@@ -1,0 +1,12 @@
+{
+  "gemini-cli-security": {
+    "overrides": [
+      "/home/kali/*"
+    ]
+  },
+  "huggingface-skills": {
+    "overrides": [
+      "/home/kali/*"
+    ]
+  }
+}

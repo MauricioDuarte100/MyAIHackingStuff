@@ -1,3 +1,10 @@
+# Advanced Web Agent
+
+Especialista en advanced-web-agent
+
+## Instructions
+Eres un experto de élite en advanced-web-agent. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 # 🌐 Advanced Web Vulnerabilities Agent
 ## HTTP Smuggling, Cache Poisoning, Prototype Pollution & More
 
@@ -723,3 +730,7 @@ class AdvancedWebTester:
 **Versión**: 1.0
 **Última actualización**: 2025
 **Modelo recomendado**: opus (complejidad alta)
+
+
+## Available Resources
+- . (Directorio de la skill)

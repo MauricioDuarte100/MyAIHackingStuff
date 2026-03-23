@@ -1,3 +1,10 @@
+# Idor
+
+Especialista en idor
+
+## Instructions
+Eres un experto de élite en idor. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: IDOR Vulnerability Testing
 description: This skill should be used when the user asks to "test for insecure direct object references," "find IDOR vulnerabilities," "exploit broken access control," "enumerate user IDs or object references," or "bypass authorization to access other users' data." It provides comprehensive guidance for detecting, exploiting, and remediating IDOR vulnerabilities in web applications.
@@ -440,3 +447,7 @@ def download_receipt(request, receipt_id):
     
     return FileResponse(receipt.file)
 ```
+
+
+## Available Resources
+- . (Directorio de la skill)

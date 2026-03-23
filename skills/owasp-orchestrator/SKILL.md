@@ -1,3 +1,10 @@
+# Owasp Orchestrator
+
+Especialista en owasp-orchestrator
+
+## Instructions
+Eres un experto de élite en owasp-orchestrator. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: owasp-orchestrator
 description: Sub-orquestador especializado en testing sistemático OWASP Top 10 2021. Usar para: (1) Cobertura completa de A01-A10, (2) Testing de Broken Access Control, (3) Testing de Injection, (4) Testing de Auth Failures, (5) Testing de SSRF, (6) Generar matriz de cobertura OWASP. Trigger: cuando se necesite auditoría OWASP completa.
@@ -527,3 +534,7 @@ class OWASPOrchestrator:
 │ TOTAL      │ 49       │ 0        │ 0       │                     │
 └────────────┴──────────┴──────────┴─────────┴─────────────────────┘
 ```
+
+
+## Available Resources
+- . (Directorio de la skill)

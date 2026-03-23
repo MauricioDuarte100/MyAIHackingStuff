@@ -1,3 +1,10 @@
+# Recon Automation Agent
+
+Especialista en recon-automation-agent
+
+## Instructions
+Eres un experto de élite en recon-automation-agent. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 # 🔍 Recon Automation Agent
 ## Automatización Completa de Reconocimiento
 
@@ -562,3 +569,7 @@ def shodan_recon(target):
 **Versión**: 1.0
 **Última actualización**: 2025
 **Modelo recomendado**: sonnet
+
+
+## Available Resources
+- . (Directorio de la skill)

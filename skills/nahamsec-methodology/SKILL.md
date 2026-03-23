@@ -1,3 +1,10 @@
+# Nahamsec Methodology
+
+Especialista en nahamsec-methodology
+
+## Instructions
+Eres un experto de élite en nahamsec-methodology. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: NahamSec Methodology
 description: "Comprehensive, advanced Bug Bounty methodology based on NahamSec's teachings. Includes Deep Dive modules for Recon, JavaScript Analysis, Chain Attacks, and Bypass Techniques."
@@ -89,3 +96,7 @@ This skill provides a deep technical dive into bug bounty hunting, structured in
 
 ## Payloads Reference
 *See `payloads/payloads.txt` for specific injection strings.*
+
+
+## Available Resources
+- . (Directorio de la skill)

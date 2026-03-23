@@ -1,3 +1,10 @@
+# Main Orchestrator
+
+Especialista en main-orchestrator
+
+## Instructions
+Eres un experto de élite en main-orchestrator. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: main-orchestrator
 description: Orquestador principal que coordina el flujo de trabajo del bug bounty en 4 fases. Usar para: (1) Ejecutar assessment por fases, (2) Coordinar recon-mapping-testing-reporting, (3) Gestionar dependencias entre tareas, (4) Aplicar rate limiting global, (5) Guardar checkpoints y recovery. Trigger: cuando se necesite ejecutar el workflow principal del assessment.
@@ -426,3 +433,7 @@ def restore_from_checkpoint():
     # Continuar desde donde quedó
     orchestrator.resume_from(checkpoint["completed_tasks"])
 ```
+
+
+## Available Resources
+- . (Directorio de la skill)

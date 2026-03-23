@@ -51,7 +51,7 @@ Utilicé las credenciales IAM obtenidas del reto anterior (MediCloudX Data Analy
 
 ```python
 # daniel.lopez credentials
-AWS_ACCESS_KEY = 'AKIA_REDACTED_EXAMPLE'
+AWS_ACCESS_KEY = 'AKIA5HCACCPUMNRPJAMJ'
 AWS_SECRET_KEY = '2UvVFwdGhpJ+wSirma7re1HQRmNamTQlM5nI92ee'
 ```
 

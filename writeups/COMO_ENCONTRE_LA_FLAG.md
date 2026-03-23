@@ -127,13 +127,13 @@ Descargué los archivos CSV que contenían credenciales AWS:
 **carlos.cardenas.csv:**
 ```csv
 User Name,Access Key Id,Secret Access Key
-carlos.cardenas,AKIA_REDACTED_EXAMPLE,nCcHPOtDk4j5DFnOqzqEy64UYuupX4tWCselUUZF
+carlos.cardenas,AKIA5HCACCPUM5JVDROJ,nCcHPOtDk4j5DFnOqzqEy64UYuupX4tWCselUUZF
 ```
 
 **daniel.lopez/aws-credentials.csv:**
 ```csv
 User Name,Access Key Id,Secret Access Key
-daniel.lopez,AKIA_REDACTED_EXAMPLE,2UvVFwdGhpJ+wSirma7re1HQRmNamTQlM5nI92ee
+daniel.lopez,AKIA5HCACCPUMNRPJAMJ,2UvVFwdGhpJ+wSirma7re1HQRmNamTQlM5nI92ee
 ```
 
 ---
@@ -149,7 +149,7 @@ Probé las credenciales de ambos empleados:
 ```python
 s3_daniel = boto3.client(
     's3',
-    aws_access_key_id='AKIA_REDACTED_EXAMPLE',
+    aws_access_key_id='AKIA5HCACCPUMNRPJAMJ',
     aws_secret_access_key='2UvVFwdGhpJ+wSirma7re1HQRmNamTQlM5nI92ee'
 )
 
@@ -250,7 +250,7 @@ CTF{m3d1cl0udx_d4t4_4n4lys1s_cr3d3nt14l_3xf1ltr4t10n}
 
 **Ubicación:** `s3://ctf-25-medicloudx-patient-data-l2808981/analytics/patient-insights/flag.txt`
 
-**Credenciales usadas:** daniel.lopez (AKIA_REDACTED_EXAMPLE)
+**Credenciales usadas:** daniel.lopez (AKIA5HCACCPUMNRPJAMJ)
 
 ---
 

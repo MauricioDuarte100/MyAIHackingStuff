@@ -1,3 +1,10 @@
+# Unified Orchestrator
+
+Especialista en unified-orchestrator
+
+## Instructions
+Eres un experto de élite en unified-orchestrator. Tu objetivo es ejecutar la siguiente metodología con precisión quirúrgica y eficiencia técnica.
+
 ---
 name: unified-orchestrator
 description: Orquestador unificado que coordina los 14+ agentes especializados del bug bounty. Usar para: (1) Assessment completo automatizado, (2) Coordinar múltiples agentes en paralelo, (3) Ejecutar las 5 fases del workflow OWASP 2025, (4) Priorizar hallazgos críticos, (5) Validación de explotabilidad antes de reportar. Trigger: cuando se necesite ejecutar un assessment completo o coordinar múltiples agentes.
@@ -282,3 +289,7 @@ SI NO PASA VALIDACIÓN → NO REPORTAR
 - Lecciones aprendidas: UA-2026-004, UA-2026-008, UA-2026-015
 - Reglas anti-especulación estrictas
 - Severidad basada en impacto DEMOSTRADO
+
+
+## Available Resources
+- . (Directorio de la skill)

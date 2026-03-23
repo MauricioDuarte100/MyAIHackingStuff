@@ -58,11 +58,11 @@ También encontré en `docu1.txt` (línea 355) el AWS Access Key ID:
 ```c
 snprintf(&auth_header.0[0], 0x400,
     "AWS4-HMAC-SHA256 Credential=%s/%s/%s/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=%s",
-    "AKIA_REDACTED_EXAMPLE", &v4, "us-east-1", &v14);
+    "AKIA5HCACCPUIT3ENBNP", &v4, "us-east-1", &v14);
 ```
 
 **Credenciales encontradas**:
-- **Access Key ID**: `AKIA_REDACTED_EXAMPLE`
+- **Access Key ID**: `AKIA5HCACCPUIT3ENBNP`
 - **Secret Access Key**: `YyKO6DUTjsrBlLLctdbtcqROBs9fRnPImUEx0YyR`
 - **Región**: `us-east-1`
 
@@ -82,7 +82,7 @@ Creé un script Python para validar las credenciales:
 ```python
 import boto3
 
-AWS_ACCESS_KEY = "AKIA_REDACTED_EXAMPLE"
+AWS_ACCESS_KEY = "AKIA5HCACCPUIT3ENBNP"
 AWS_SECRET_KEY = "YyKO6DUTjsrBlLLctdbtcqROBs9fRnPImUEx0YyR"
 
 session = boto3.Session(
@@ -163,7 +163,7 @@ CTF{m3d1cl0udx_r3v3rs3_3ng1n33r1ng_4ws_cr3d3nt14ls}
 import boto3
 from botocore.config import Config
 
-AWS_ACCESS_KEY = "AKIA_REDACTED_EXAMPLE"
+AWS_ACCESS_KEY = "AKIA5HCACCPUIT3ENBNP"
 AWS_SECRET_KEY = "YyKO6DUTjsrBlLLctdbtcqROBs9fRnPImUEx0YyR"
 REGION = "us-east-1"
 
@@ -187,7 +187,7 @@ print(f"Account ID: {identity['Account']}")
 #!/usr/bin/env python3
 import boto3
 
-AWS_ACCESS_KEY = "AKIA_REDACTED_EXAMPLE"
+AWS_ACCESS_KEY = "AKIA5HCACCPUIT3ENBNP"
 AWS_SECRET_KEY = "YyKO6DUTjsrBlLLctdbtcqROBs9fRnPImUEx0YyR"
 BUCKET_SUFFIX = "u145wnn0"
 BUCKET_NAME = f"ctf-25-medical-exporter-records-{BUCKET_SUFFIX}"

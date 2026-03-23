@@ -102,12 +102,12 @@ objects = s3.list_objects_v2(Bucket='ctf-25-medicloudx-credentials-l2808981')
 **Found IAM User Credentials:**
 
 1. **carlos.cardenas:**
-   - Access Key: `AKIA_REDACTED_EXAMPLE`
+   - Access Key: `AKIA5HCACCPUM5JVDROJ`
    - Secret Key: `nCcHPOtDk4j5DFnOqzqEy64UYuupX4tWCselUUZF`
    - File: `employees/carlos.cardenas/carlos.cardenas.csv`
 
 2. **daniel.lopez:**
-   - Access Key: `AKIA_REDACTED_EXAMPLE`
+   - Access Key: `AKIA5HCACCPUMNRPJAMJ`
    - Secret Key: `2UvVFwdGhpJ+wSirma7re1HQRmNamTQlM5nI92ee`
    - File: `employees/daniel.lopez/aws-credentials.csv`
 
@@ -119,7 +119,7 @@ Testing both sets of credentials:
 
 ```python
 session = boto3.Session(
-    aws_access_key_id='AKIA_REDACTED_EXAMPLE',
+    aws_access_key_id='AKIA5HCACCPUMNRPJAMJ',
     aws_secret_access_key='2UvVFwdGhpJ+wSirma7re1HQRmNamTQlM5nI92ee',
     region_name='us-east-1'
 )
