@@ -29,7 +29,7 @@ El desafío proporciona el código fuente completo en `index.php`. Los puntos cl
 #### Generación de Strings Aleatorios
 ```php
 function generate_random_string($length = 12) {
-  $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  $chars = 'SECRET_REDACTED_BY_ANTIGRAVITYOPQRSTUVWXYZ0123456789';
   $str = '';
   for ($i = 0; $i < $length; $i++) {
     $str .= $chars[mt_rand(0, strlen($chars) - 1)];  // ⚠️ VULNERABLE!
@@ -147,7 +147,7 @@ import requests
 import subprocess
 
 URL = "http://blu3-luck.blackalpaca.org:9999"
-CHARS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+CHARS = 'SECRET_REDACTED_BY_ANTIGRAVITYOPQRSTUVWXYZ0123456789'
 
 class MTRand:
     """Implementación de MT19937 compatible con PHP"""
@@ -329,7 +329,7 @@ $ python3 final_exploit.py
 Cada carácter se convierte a su índice en el charset:
 
 ```
-Charset: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+Charset: 'SECRET_REDACTED_BY_ANTIGRAVITYOPQRSTUVWXYZ0123456789'
          0                         26                        52        61
 
 Ticket: p  n  A  S  2  W  a  q  l  e  i  c  R  u  l  q
@@ -388,12 +388,12 @@ for _ in range(16):
 [*] Winning ticket predicho: gHhSoLPajD4gOuvi
 [*] Resultado: {'message': '🎉 Congratulations!', 'flag': 'ALP{r4nd0m_1s_n0t_r4nd0m_duh}'}
 
-======================================================================
+SECRET_REDACTED_BY_ANTIGRAVITY==============================
 [+] ¡ÉXITO! FLAG ENCONTRADA!
 [+] Flag: ALP{r4nd0m_1s_n0t_r4nd0m_duh}
 [+] Winning ticket: gHhSoLPajD4gOuvi
 [+] Offset usado: 16
-======================================================================
+SECRET_REDACTED_BY_ANTIGRAVITY==============================
 ```
 
 ## Detalles Técnicos
