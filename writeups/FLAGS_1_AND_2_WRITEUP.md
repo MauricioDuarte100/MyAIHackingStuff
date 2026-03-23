@@ -98,11 +98,11 @@ La segunda flag se encontró analizando el código fuente del cliente (Frontend)
     4.  Index 2: `6261387d`
 
     **Cadena Hex completa:**
-    `666c61677b623566633631353033326461396364643364336234336436376336326635306261387d`
+    `SECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITY`
 
     **Comando para decodificar:**
     ```bash
-    echo "666c61677b623566633631353033326461396364643364336234336436376336326635306261387d" | xxd -r -p
+    echo "SECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITY" | xxd -r -p
     ```
 
     **Flag 2:**
