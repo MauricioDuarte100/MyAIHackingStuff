@@ -110,7 +110,7 @@ key = bytes([encrypted[i] ^ flag_prefix[i] for i in range(4)])
 ### 6. Descifrando la flag
 
 ```python
-encrypted = bytes.fromhex('1c1b0130237b30260b3d703d0b7e3014377f7327756e3e')
+encrypted = bytes.fromhex('SECRET_REDACTED_BY_ANTIGRAVITY756e3e')
 key = b"TOCK"
 
 flag = bytes([encrypted[i] ^ key[i % 4] for i in range(len(encrypted))])
@@ -127,7 +127,7 @@ print(flag.decode())
 Clock Work Memory - CTF Solution
 """
 
-encrypted = bytes.fromhex('1c1b0130237b30260b3d703d0b7e3014377f7327756e3e')
+encrypted = bytes.fromhex('SECRET_REDACTED_BY_ANTIGRAVITY756e3e')
 
 # Clave incorrecta en el WASM: 0x4B4D5754 = "TWMK"
 # Clave correcta derivada: "TOCK" (tick-tock del reloj)
