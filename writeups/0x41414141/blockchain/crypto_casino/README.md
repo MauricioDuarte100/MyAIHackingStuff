@@ -3,7 +3,7 @@ We were given the challenge text:
 ```
 there's is cool decentralized casino, you can play as much as you want but if you lose once you lost everything
 
-address : 0x186d5d064545f6211dD1B5286aB2Bc755dfF2F59
+address : SECRET_REDACTED_BY_ANTIGRAVITY59
 ```
 
 Along with the file [contract.sol](contract.sol).
@@ -28,7 +28,7 @@ w3 = Web3(Web3.HTTPProvider('https://rinkeby.infura.io/v3/API_KEY')) # Instead o
 
 w3.middleware_onion.inject(geth_poa_middleware, layer=0) # Some stuff StackOverflow told me to add after I got errors
 
-contract_address = '0x186d5d064545f6211dD1B5286aB2Bc755dfF2F59' # The address of the contract
+contract_address = 'SECRET_REDACTED_BY_ANTIGRAVITY59' # The address of the contract
 
 # I used http://remix.ethereum.org/ to generate the ABI for me from the source code, this allows web3 to know what kind of functions exist in the contract, what those function return, etc.
 abi = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[{"internalType":"uint256","name":"guess","type":"uint256"}],"name":"bet","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"consecutiveWins","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"done","outputs":[{"internalType":"int","name":"","type":"int"}],"stateMutability":"view","type":"function"}]
