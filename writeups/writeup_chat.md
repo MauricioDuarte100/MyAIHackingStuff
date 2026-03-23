@@ -39,7 +39,7 @@ Los mensajes están codificados en **Base64** a partir de cierto punto. Decodifi
 | Base64 | Decodificado |
 |--------|--------------|
 | `SSBhbG1vc3QgZm9yZ290Lg==` | "I almost forgot." |
-| `U2F5IGhlbGxvIHRvIHRoZSBuZXcgZW1wbG95ZWUuIENoYWQ=` | "Say hello to the new employee. Chad" |
+| `SECRET_REDACTED_BY_ANTIGRAVITYIENoYWQ=` | "Say hello to the new employee. Chad" |
 
 ### Descubriendo al intruso: Chad
 
@@ -59,7 +59,7 @@ El siguiente mensaje de Chad:
 ```json
 {
     "name": "Chad",
-    "message": "f0VMRgIBAQAAAAAAAAAAAAIAPgABAAAAwA1HAAAAAABAAAAAAAAAAJhaHAAAAAAAAAAAAEAAOAAGAEAAEAAPAAYAAAAEAAAAQAAAAAAAAABAAEAAAAAAAEAAQAAAAAAAUAEAAAAAAABQAQAAAAAAAAAQAAAAAAAABAAAAA==",
+    "message": "SECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITYBAAAAA==",
     "timestamp": 1765180688.1915672
 }
 ```
