@@ -119,7 +119,7 @@ crafted_hex_bytes = bytes([payload_bytes[i] ^ xss_key[i]
 crafted_hex = crafted_hex_bytes.hex()
 
 print(f"Hex a enviar: {crafted_hex}")
-# Resultado: 643a3e3f73202a306e20733c3636212a3c2165323f3d2127707a6d
+# Resultado: SECRET_REDACTED_BY_ANTIGRAVITY3f3d2127707a6d
 ```
 
 ### Paso 3: Verificación
@@ -146,7 +146,7 @@ print(decoded.decode())
 2. Limpié el campo de entrada
 3. Ingresé el hex crafteado:
    ```
-   643a3e3f73202a306e20733c3636212a3c2165323f3d2127707a6d
+   SECRET_REDACTED_BY_ANTIGRAVITY3f3d2127707a6d
    ```
 4. Clickeé "Validate"
 
@@ -170,11 +170,11 @@ La página `/validate` mostró:
 
 | Payload | Hex Encodado | Longitud |
 |---------|--------------|----------|
-| `<script>alert()</script>` | `6420302a3a232c6d323436212c7b7a647c203b213a28276d` | 48 chars |
-| `<script>alert(1)</script>` | `6420302a3a232c6d323436212c7b62716f7c2b302131232766` | 50 chars |
-| `<img src=x onerror=alert()>` | `643a3e3f73202a306e20733c3636212a3c2165323f3d2127707a6d` | 54 chars |
-| `<svg onload=alert()>` | `6420253f733c363f3c39376e393f362a277b716d` | 40 chars |
-| `<body onload=alert()>` | `64313c3c2a73373d3f37323765323f3d2127707a6d` | 42 chars |
+| `<script>alert()</script>` | `SECRET_REDACTED_BY_ANTIGRAVITY3a28276d` | 48 chars |
+| `<script>alert(1)</script>` | `SECRET_REDACTED_BY_ANTIGRAVITY2131232766` | 50 chars |
+| `<img src=x onerror=alert()>` | `SECRET_REDACTED_BY_ANTIGRAVITY3f3d2127707a6d` | 54 chars |
+| `<svg onload=alert()>` | `SECRET_REDACTED_BY_ANTIGRAVITY` | 40 chars |
+| `<body onload=alert()>` | `SECRET_REDACTED_BY_ANTIGRAVITY6d` | 42 chars |
 
 ---
 
