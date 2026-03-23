@@ -97,7 +97,7 @@ Con la marca de tiempo como semilla, procedemos a replicar el proceso de descifr
 2.  **Derivar la clave:**
     *   Input: `1742117677` (como bytes little-endian: `\x2d\x9b\xd6\x67`).
     *   Algoritmo: SHA-256.
-    *   Clave resultante: `820a2cf6e0a71338e16cb15469f9726b5cd830dee6a12fffec3f0d6d89f42211`
+    *   Clave resultante: `SECRET_REDACTED_BY_ANTIGRAVITYe6a12fffec3f0d6d89f42211`
 
 3.  **Descifrar:**
     Usamos `openssl` (asumiendo AES-256-CBC y un IV de ceros, comón en implementaciones simples de `CryptDeriveKey` de Windows si no se especifica sal).
@@ -105,7 +105,7 @@ Con la marca de tiempo como semilla, procedemos a replicar el proceso de descifr
 ```bash
 # Blob extraído a blob.bin
 openssl enc -aes-256-cbc -d \
-    -K 820a2cf6e0a71338e16cb15469f9726b5cd830dee6a12fffec3f0d6d89f42211 \
+    -K SECRET_REDACTED_BY_ANTIGRAVITYe6a12fffec3f0d6d89f42211 \
     -iv 00000000000000000000000000000000 \
     -in blob.bin -out decrypted.txt
 ```
