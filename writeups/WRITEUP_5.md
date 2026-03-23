@@ -239,7 +239,7 @@ This suggests a threshold or loop count in the Next.js middleware handling logic
 
 ## Files Created
 
-All analysis files located in: `/media/p0mb3r0/4tb/CTF/alpacactf/medicloudx_workforce/`
+All analysis files located in: `SECRET_REDACTED_BY_ANTIGRAVITYudx_workforce/`
 
 - `FINAL_EXPLOIT.py` - Complete exploit script
 - `recon.py` - Initial reconnaissance
