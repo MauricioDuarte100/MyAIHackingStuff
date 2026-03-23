@@ -16,8 +16,8 @@ sha256sum momo
 Salida:
 
 ```text
-/mnt/data/momo: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=072d43df16e10af4f3d79a4851e9b2175f2dbcfc, not stripped
-241055e116c1a6966c09343d2439cd64013de0450a9ae644cfd3820b378123a1  /mnt/data/momo
+/mnt/data/momo: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]SECRET_REDACTED_BY_ANTIGRAVITYc, not stripped
+SECRET_REDACTED_BY_ANTIGRAVITY0a9ae644cfd3820b378123a1  /mnt/data/momo
 ```
 
 Conclusiones rápidas:
